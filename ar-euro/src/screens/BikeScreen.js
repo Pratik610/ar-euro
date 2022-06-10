@@ -8,327 +8,11 @@ const BikeScreen = () => {
 
 	const [bike, setBike] = useState(0)
 	const allBikes = [
-		{
-			name: 'Strada',
-			code: 'F046',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'ZOOM Suspention front fork',
-				brake: 'Tektro F+R disc brake',
-				display: 'LCD display',
-				battery: 'LG 36V 9.6 Ah',
-				motor: 'Bafang rear motor 36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'Kenda 20*2.35',
-			},
-		},
-		{
-			name: 'Rigel',
-			code: 'F042',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: 'Meganisium-alloy',
-				frontFork: 'Steel front fork',
-				brake: 'F+R mechanical disc brake   ',
-				display: 'LCD display',
-				battery: '36V 7.5Ah',
-				motor: 'Rear motor 36V 250W ',
-				gear: 'Shimano 6 speed',
-				tire: 'CST 16*2.125',
-			},
-		},
-		{
-			name: 'Hefei',
-			code: 'F031',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'Tektro F+R disc brake',
-				display: 'LED display',
-				battery: '48V 10Ah',
-				motor: 'Rear motor  48V 500W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 20*4.0',
-			},
-		},
-		{
-			name: 'Doodle',
-			code: 'F032',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'F+R disc brake',
-				display: 'LCD display',
-				battery: '36V 10Ah',
-				motor: 'Rear motor  36V 350W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 20*4.0',
-			},
-		},
-		{
-			name: 'Echo',
-			code: 'F043',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Aluminium alloy front fork',
-				brake: 'Tektro Mechanical F+R disc brake',
-				display: 'LCD display',
-				battery: 'LG 36V 9.6Ah ',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 20*1.95',
-			},
-		},
-		{
-			name: 'Toledo',
-			code: 'F049',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'Tektro hydraulic oil F+R disc brake',
-				display: 'LCD display',
-				battery: '36V 12.8Ah',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 20*4.0',
-			},
-		},
-		{
-			name: 'Windsor',
-			code: 'F050',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'Tektro F+R disc brake',
-				display: 'LED display',
-				battery: '48V 10Ah',
-				motor: 'Rear motor 48V 500W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 20*4.0',
-			},
-		},
-
-		// CITY Bikes
-
-		{
-			name: 'Coco',
-			code: 'C003',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Steel front fork',
-				brake: 'F+R disc brake',
-				display: 'LCD  display',
-				battery: '36V 10.4Ah',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 26*1.75',
-			},
-		},
-
-		{
-			name: 'Eighty Six',
-			code: 'C010',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
-				brake: 'Tektro mechanical F+R  disc brake',
-				display: 'LCD  display',
-				battery: '36V 15Ah',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700*38C',
-			},
-		},
-
-		{
-			name: 'Viper',
-			code: 'C037',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'F+R mechanical disc brake',
-				display: 'LCD  display',
-				battery: '36V 10.4Ah',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: '',
-			},
-		},
-		{
-			name: 'Sydney',
-			code: 'C038',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'F+R mechanical disc brake',
-				display: 'LCD  display',
-				battery: '36V 10.4Ah',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700C*38C',
-			},
-		},
-
-		{
-			name: 'Dove',
-			code: 'C041',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: 'Carbon fiber',
-				frontFork: 'SR Suntour Magnesium alloy ,front suspension',
-				brake: 'Tektro Hydraulic F+R disc brake,',
-				display: '5 lever Color LCD display  APT  860C',
-				battery: 'LG 36V 9.6Ah ,quick release with USB ',
-				motor: 'Bafang rear motor 36V 250W  ',
-				gear: 'Shimano 7 speed',
-				tire: 'Kenda 700C*45C',
-			},
-		},
-
-		{
-			name: 'Venlo',
-			code: 'C043',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'F+R mechanical disc brake',
-				display: 'LCD display',
-				battery: '36V 10.4Ah ',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700C*38C',
-			},
-		},
-
-		{
-			name: 'Vega',
-			code: 'C044',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
-				brake: 'Tektro F+R hydraulic oil disc brake',
-				display: 'LCD display',
-				battery: '36V 10.4Ah ',
-				motor: 'Middel motor 36V 250W',
-				gear: 'Shimano 9 speed',
-				tire: 'CST 27.5*2.25 tire',
-			},
-		},
-
-		{
-			name: 'Polaris',
-			code: 'C045',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'Front+rear Tektro mechanical brake',
-				display: 'LCD display',
-				battery: 'LG/Samsung  lithium battery 36V 10.4Ah with USB port',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'Kenda 27.5*2.1',
-			},
-		},
-		{
-			name: 'Polaris',
-			code: 'C045',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'Front+rear Tektro mechanical brake',
-				display: 'LCD display',
-				battery: 'LG/Samsung  lithium battery 36V 10.4Ah with USB port',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'Kenda 27.5*2.1',
-			},
-		},
-
-		// {
-		// 	name: 'Shanghai',
-		// 	code: 'C039',
-		// 	model: './Japan/XPL.gltf',
-		// 	background: './images/bg-xplorer.png',
-		// 	poster: './images/exp1.png',
-		// 	specs: {
-		// 		frame: '6061 aluminium alloy',
-		// 		frontFork: 'Alloy front fork',
-		// 		brake: 'Tektro Hydraulic F+R disc brake',
-		// 		display: '5 lever Color LCD display  APT 860C',
-		// 		battery: 'LG 36V 9.6Ah ,quick release with USB ',
-		// 		motor: 'Bafang rear motor  36V 250W',
-		// 		gear: 'Shimano 7 speed',
-		// 		tire: 'CST 700*45c with reflective',
-		// 	},
-		// },
-		{
-			name: 'Iris',
-			code: 'C055',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: 'Advanced Carbon race frame',
-				frontFork: 'Advanced Carbon race fork',
-				brake: 'SHIMANO Hydraulic F+R disc brake',
-				display: 'RideControl GO, Frame Integrated LED Display',
-				battery: 'Sumsung 36V 10AH',
-				motor: 'Vinka Middle motor 36V250W',
-				gear: 'Shimano 22 speed',
-				tire: 'CST Continental gravel 700*40C',
-			},
-		},
-
 		// Mountain Bikes
 		{
 			name: 'T-Rex',
 			code: 'M006',
+			category: 'mtb',
 			model: './Japan/XPL.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
@@ -345,80 +29,9 @@ const BikeScreen = () => {
 			},
 		},
 		{
-			name: 'Phoenix',
-			code: 'M058',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy flat wielding',
-				frontFork: 'SRAM Air,adjustment to locked',
-				rearShork: 'SRAM Air-hydraulic  adjustment',
-				brake: 'Tektro Hydraulic Oil F+R disc Brake ',
-				display: 'Bafang Color screen ,with USB port',
-				battery: 'LG 48V 17.5Ah with USB port，quick release',
-				motor: 'Bafang Middle Motor 48V 350W',
-				gear: 'SRAM 9 speed ',
-				tire: 'Kenda tire 26*4.0inch,puncture-proof with reflector ',
-			},
-		},
-		{
-			name: 'Athena',
-			code: 'M057',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy flat wielding',
-				frontFork: 'SRAM Air,adjustment to locked',
-				rearShork: 'SRAM Air-hydraulic  adjustment',
-				brake: 'Tektro Hydraulic Oil F+R disc Brake  ',
-				display: 'Bafang Color screen ,with USB port',
-				battery: 'LG 48V 17.5Ah(With USB port)，quick release',
-				motor: 'Bafang Middle Motor 48V 350W',
-				gear: 'SRAM 9 speed ',
-				tire: 'CST MAXXIS tire front 29*2.5"，rear 29*2.4',
-			},
-		},
-		{
-			name: 'Lucia',
-			code: 'M051',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: 'Carbon fiber',
-				frontFork: 'Hydraulic,adjustent to locked,SRAMs',
-				rearShork: 'KS adjustable Rear oil shork',
-				brake: 'Hydraulic Disc-brake Tektro M290',
-				display: 'LCD display',
-				battery: 'Lithium battery 48V 16Ah',
-				motor: 'Middle  motor 48V 250W/500W',
-				gear: 'Shimano Acera 8 speed',
-				tire: 'Kenda 27.5*2.35',
-			},
-		},
-		{
-			name: 'Dune',
-			code: 'M052',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork with lock',
-				rearShork: '',
-				brake: 'F+R disc brake ',
-				display: 'LCD display',
-				battery: '48V 10.4Ah',
-				motor: 'Rear Motor 48V 250W',
-				gear: 'Shimano 21 speed',
-				tire: 'CST 27.5*2.1',
-			},
-		},
-		{
 			name: 'Fireblade',
 			code: 'M011',
+			category: 'mtb',
 			model: './Japan/XPL.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
@@ -435,47 +48,12 @@ const BikeScreen = () => {
 			},
 		},
 		{
-			name: 'Spark',
-			code: 'M053',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
-				rearShork: '',
-				brake: 'Tektro hydraulic oil F+R disc brakes',
-				display: 'LCD display',
-				battery: '48V 10.4Ah',
-				motor: 'Middle motor 36V 250W',
-				gear: 'Shimano 9 speed',
-				tire: '27.5*2.251 inches',
-			},
-		},
-		{
-			name: 'Trip E',
-			code: 'M037',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Oil Suspension Front Fork with lock',
-				rearShork: '',
-				brake: 'Tektro Mechanical F+R disc Brake',
-				display: 'LCD display',
-				battery: 'LG 48V 13Ah',
-				motor: 'Bafang rear motor  36V/48V 250W/500W',
-				gear: 'cST tire 27.5*2.4 inch',
-				tire: 'CST tire 27.5*2.4 inch',
-			},
-		},
-		{
 			name: 'Crusader',
 			code: 'M030',
-			model: './Japan/XPL.gltf',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M030/M030.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/CRUSADER M030.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Hydraulic Oil Supension Front Fork with lock',
@@ -489,8 +67,144 @@ const BikeScreen = () => {
 			},
 		},
 		{
+			name: 'Trip E',
+			code: 'M037',
+			category: 'mtb',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M037/newtripe.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/TREIP E M037.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Oil Suspension Front Fork with lock',
+				rearShork: '',
+				brake: 'Tektro Mechanical F+R disc Brake',
+				display: 'LCD display',
+				battery: 'LG 48V 13Ah',
+				motor: 'Bafang rear motor  36V/48V 250W/500W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST tire 27.5*2.4 inch',
+			},
+		},
+		{
+			name: 'ROME',
+			code: 'M041',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M041/M041.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/ROME M041.png',
+			specs: {
+				frame: '6061 aluminium alloy flat wielding',
+				frontFork: 'Hydraulic oil Suspension Front Fork with lock',
+				rearShork: 'KS-A5 Hydraulic oil rear shork  ',
+				brake: 'Tektro Hydraulic Oil F+R disc Brake',
+				display: 'Bafang LCD display',
+				battery: '48V 19.5 Ah(With usb port)，quick release',
+				motor: 'Bafang middle motor 48V 500W',
+				gear: 'Shimano 8 speed',
+				tire: 'Kenda 27.5*2.35inch',
+			},
+		},
+		{
+			name: 'EMX',
+			code: 'M042',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_EMX/EMX.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/EMX M042.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Oil Suspension Front Fork with lock',
+				rearShork: 'Mechanical Rear shork',
+				brake: ' F+R disc brakes',
+				display: 'LCD display',
+				battery: '36V 10.4Ah',
+				motor: 'Bafang rear motor  36V 250W',
+				gear: 'Shimano 21 speed',
+				tire: 'CST 27.5*2.1',
+			},
+		},
+		{
+			name: 'T-REX Pro',
+			code: 'M047',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M047/M047.gltf',
+			background: './posters/T-REX PRO M047.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork with lock',
+				rearShork: '',
+				brake: ' F+R disc brakes',
+				display: 'LCD display',
+				battery: '36V 10Ah',
+				motor: 'Rear motor 36V 350W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 26*4.0',
+			},
+		},
+		{
+			name: 'Lucia',
+			code: 'M051',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M051/m051.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/Lucia M051.png',
+			specs: {
+				frame: 'Carbon fiber',
+				frontFork: 'Hydraulic,adjustent to locked,SRAMs',
+				rearShork: 'KS adjustable Rear oil shork',
+				brake: 'Hydraulic Disc-brake Tektro M290',
+				display: 'LCD display',
+				battery: 'Lithium battery 48V 16Ah',
+				motor: 'Middle  motor 48V 250W/500W',
+				gear: 'Shimano Acera 8 speed',
+				tire: 'Kenda 27.5*2.35',
+			},
+		},
+		{
+			name: 'Dune',
+			code: 'M052',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M052/M052.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork with lock',
+				rearShork: '',
+				brake: 'F+R disc brake ',
+				display: 'LCD display',
+				battery: '48V 10.4Ah',
+				motor: 'Rear Motor 48V 250W',
+				gear: 'Shimano 21 speed',
+				tire: 'CST 27.5*2.1',
+			},
+		},
+
+		{
+			name: 'Spark',
+			code: 'M053',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M053/m053.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/SPARK M053.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
+				rearShork: '',
+				brake: 'Tektro hydraulic oil F+R disc brakes',
+				display: 'LCD display',
+				battery: '48V 10.4Ah',
+				motor: 'Middle motor 36V 250W',
+				gear: 'Shimano 9 speed',
+				tire: '27.5*2.251 inches',
+			},
+		},
+		{
 			name: 'Capella',
 			code: 'M054',
+			category: 'mtb',
 			model: './Japan/XPL.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
@@ -509,6 +223,7 @@ const BikeScreen = () => {
 		{
 			name: 'Tailwind',
 			code: 'M055',
+			category: 'mtb',
 			model: './Japan/XPL.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
@@ -524,76 +239,493 @@ const BikeScreen = () => {
 				tire: 'CST 27.5*3.0inches',
 			},
 		},
+
 		{
-			name: 'T-REX Pro',
-			code: 'M047',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork with lock',
-				rearShork: '',
-				brake: ' F+R disc brakes',
-				display: 'LCD display',
-				battery: '36V 10Ah',
-				motor: 'Rear motor 36V 350W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 26*4.0',
-			},
-		},
-		{
-			name: 'EMX',
-			code: 'M042',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Oil Suspension Front Fork with lock',
-				rearShork: 'Mechanical Rear shork',
-				brake: ' F+R disc brakes',
-				display: 'LCD display',
-				battery: '36V 10.4Ah',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 21 speed',
-				tire: 'CST 27.5*2.1',
-			},
-		},
-		{
-			name: 'Trip E',
-			code: 'M037',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Oil Suspension Front Fork with lock',
-				rearShork: '',
-				brake: 'Tektro Mechanical F+R disc Brake',
-				display: 'LCD display',
-				battery: 'LG 48V 13Ah',
-				motor: 'Bafang rear motor  36V/48V 250W/500W',
-				gear: 'Shimano 21 speed',
-				tire: 'CST tire 27.5*2.4 inch',
-			},
-		},
-		{
-			name: 'ROME',
-			code: 'M041',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			name: 'Athena',
+			code: 'M057',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M057/m057.gltf',
+			background: '',
+			poster: './posters/ATHENA M057.png',
 			specs: {
 				frame: '6061 aluminium alloy flat wielding',
-				frontFork: 'Hydraulic oil Suspension Front Fork with lock',
-				rearShork: 'KS-A5 Hydraulic oil rear shork  ',
-				brake: 'Tektro Hydraulic Oil F+R disc Brake',
-				display: 'Bafang LCD display',
-				battery: '48V 19.5 Ah(With usb port)，quick release',
-				motor: 'Bafang middle motor 48V 500W',
-				gear: 'Shimano 8 speed',
-				tire: 'Kenda 27.5*2.35inch',
+				frontFork: 'SRAM Air,adjustment to locked',
+				rearShork: 'SRAM Air-hydraulic  adjustment',
+				brake: 'Tektro Hydraulic Oil F+R disc Brake  ',
+				display: 'Bafang Color screen ,with USB port',
+				battery: 'LG 48V 17.5Ah(With USB port)，quick release',
+				motor: 'Bafang Middle Motor 48V 350W',
+				gear: 'SRAM 9 speed ',
+				tire: 'CST MAXXIS tire front 29*2.5"，rear 29*2.4',
+			},
+		},
+
+		{
+			name: 'Phoenix',
+			code: 'M058',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M058/M058.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/PHEONIX M058.png',
+			specs: {
+				frame: '6061 aluminium alloy flat wielding',
+				frontFork: 'SRAM Air,adjustment to locked',
+				rearShork: 'SRAM Air-hydraulic  adjustment',
+				brake: 'Tektro Hydraulic Oil F+R disc Brake ',
+				display: 'Bafang Color screen ,with USB port',
+				battery: 'LG 48V 17.5Ah with USB port，quick release',
+				motor: 'Bafang Middle Motor 48V 350W',
+				gear: 'SRAM 9 speed ',
+				tire: 'Kenda tire 26*4.0inch,puncture-proof with reflector ',
+			},
+		},
+
+		// CITY Bikes
+
+		{
+			name: 'Coco',
+			code: 'C003',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Steel front fork',
+				brake: 'F+R disc brake',
+				display: 'LCD  display',
+				battery: '36V 10.4Ah',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 26*1.75',
+			},
+		},
+
+		{
+			name: 'Eighty Six',
+			code: 'C010',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
+				brake: 'Tektro mechanical F+R  disc brake',
+				display: 'LCD  display',
+				battery: '36V 15Ah',
+				motor: 'Bafang rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700*38C',
+			},
+		},
+
+		{
+			name: 'Viper',
+			code: 'C037',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C037/C037.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/VIPER C037.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'F+R mechanical disc brake',
+				display: 'LCD  display',
+				battery: '36V 10.4Ah',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700c x 38c',
+			},
+		},
+		{
+			name: 'Sydney',
+			code: 'C038',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C038/C038.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/SYDNEY C038.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'F+R mechanical disc brake',
+				display: 'LCD  display',
+				battery: '36V 10.4Ah',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700C*38C',
+			},
+		},
+
+		{
+			name: 'Dove',
+			code: 'C041',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C041/C041.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/DOVE C041.png',
+			specs: {
+				frame: 'Carbon fiber',
+				frontFork: 'SR Suntour Magnesium alloy ,front suspension',
+				brake: 'Tektro Hydraulic F+R disc brake,',
+				display: '5 lever Color LCD display  APT  860C',
+				battery: 'LG 36V 9.6Ah ,quick release with USB ',
+				motor: 'Bafang rear motor 36V 250W  ',
+				gear: 'Shimano 7 speed',
+				tire: 'Kenda 700C*45C',
+			},
+		},
+
+		{
+			name: 'Simba',
+			code: 'C042',
+			category: 'city',
+			model: '',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: 'Carbon fiber',
+				frontFork: 'SR Suntour Magnesium alloy, front suspension',
+				brake: 'Tektro Hydraulic F+R disc brake,',
+				display: '5 lever Color LCD display  APT  860C',
+				battery: 'LG 36V 9.6Ah, quick release with USB ',
+				motor: 'Bafang rear motor 36V 250W  ',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700*45c with reflective',
+			},
+		},
+
+		{
+			name: 'Venlo',
+			code: 'C043',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'F+R mechanical disc brake',
+				display: 'LCD display',
+				battery: '36V 10.4Ah ',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700C*38C',
+			},
+		},
+
+		{
+			name: 'Vega',
+			code: 'C044',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C044/C044.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/VEGA C044.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
+				brake: 'Tektro F+R hydraulic oil disc brake',
+				display: 'LCD display',
+				battery: '36V 10.4Ah ',
+				motor: 'Middel motor 36V 250W',
+				gear: 'Shimano 9 speed',
+				tire: 'CST 27.5*2.25 tire',
+			},
+		},
+
+		{
+			name: 'Polaris',
+			code: 'C045',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Front+rear Tektro mechanical brake',
+				display: 'LCD display',
+				battery: 'LG/Samsung  lithium battery 36V 10.4Ah with USB port',
+				motor: 'Bafang rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'Kenda 27.5*2.1',
+			},
+		},
+		{
+			name: 'Castor',
+			code: 'C046',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Front + Rear Disc mechanical disc brake ',
+				display: 'LCD display',
+				battery: '48V 12.5Ah',
+				motor: 'Rear motor 48V  250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 26*2.125',
+			},
+		},
+
+		{
+			name: 'Plymouth',
+			code: 'C053',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C053/C053.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/DUNE M052.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Alloy Suspension front fork',
+				brake: 'Tektro mechanical F+R disc brake',
+				display: 'LCD display',
+				battery: '36V 10.4Ah ，quick release',
+				motor: 'Rear motor 36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 26*2.35',
+			},
+		},
+		{
+			name: 'Brooklyn',
+			code: 'C054',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C054/C054.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/BROOKLYN C054.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Alloy Suspension front fork',
+				brake: 'Tektro mechanical F+R disc brake',
+				display: 'LCD display',
+				battery: '36V 10.4Ah ，quick release',
+				motor: 'Rear motor 36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 26*2.35',
+			},
+		},
+
+		{
+			name: 'Shanghai',
+			code: 'C039',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/SHANGHAI C039.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Alloy front fork',
+				brake: 'Tektro Hydraulic F+R disc brake',
+				display: '5 lever Color LCD display  APT 860C',
+				battery: 'LG 36V 9.6Ah ,quick release with USB ',
+				motor: 'Bafang rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700*45c with reflective',
+			},
+		},
+		{
+			name: 'Iris',
+			code: 'C055',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: 'Advanced Carbon race frame',
+				frontFork: 'Advanced Carbon race fork',
+				brake: 'SHIMANO Hydraulic F+R disc brake',
+				display: 'RideControl GO, Frame Integrated LED Display',
+				battery: 'Sumsung 36V 10AH',
+				motor: 'Vinka Middle motor 36V250W',
+				gear: 'Shimano 22 speed',
+				tire: 'CST Continental gravel 700*40C',
+			},
+		},
+		{
+			name: 'Santorini',
+			code: 'C056',
+			category: 'city',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C056/C056.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/SANTORINI M056.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Mechanical F+R disc brake',
+				display: 'LCD  display',
+				battery: '36V 10.4Ah',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700*38C',
+			},
+		},
+		// Folding Bikes
+
+		{
+			name: 'Touche',
+			code: 'F024',
+			category: 'folding',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F024/f024.gltf',
+			background: './images/bg-xplorer.png',
+			poster: '../posters/TOUCHE F024.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Tektro F+R disc brake',
+				display: 'LED display',
+				battery: '48V 10Ah',
+				motor: 'Rear motor  48V 250W/500W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*4.0',
+			},
+		},
+
+		{
+			name: 'Strada',
+			code: 'F046',
+			category: 'folding',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F046/F046.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/STRADA F046.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'ZOOM Suspention front fork',
+				brake: 'Tektro F+R disc brake',
+				display: 'LCD display',
+				battery: 'LG 36V 9.6 Ah',
+				motor: 'Bafang rear motor 36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'Kenda 20*2.35',
+			},
+		},
+		{
+			name: 'Rigel',
+			code: 'F042',
+			category: 'folding',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: 'Meganisium-alloy',
+				frontFork: 'Steel front fork',
+				brake: 'F+R mechanical disc brake   ',
+				display: 'LCD display',
+				battery: '36V 7.5Ah',
+				motor: 'Rear motor 36V 250W ',
+				gear: 'Shimano 6 speed',
+				tire: 'CST 16*2.125',
+			},
+		},
+		{
+			name: 'Hefei',
+			code: 'F031',
+			category: 'folding',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/hefie f031.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Tektro F+R disc brake',
+				display: 'LED display',
+				battery: '48V 10Ah',
+				motor: 'Rear motor  48V 500W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*4.0',
+			},
+		},
+		{
+			name: 'Doodle',
+			code: 'F032',
+			category: 'folding',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_DOODLE/Doodle.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/DOODLE F032.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'F+R disc brake',
+				display: 'LCD display',
+				battery: '36V 10Ah',
+				motor: 'Rear motor  36V 350W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*4.0',
+			},
+		},
+		{
+			name: 'Echo',
+			code: 'F043',
+			category: 'folding',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F043/F043.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/ECHO F043.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Aluminium alloy front fork',
+				brake: 'Tektro Mechanical F+R disc brake',
+				display: 'LCD display',
+				battery: 'LG 36V 9.6Ah ',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*1.95',
+			},
+		},
+		{
+			name: 'Toledo',
+			code: 'F049',
+			category: 'folding',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F049/F049.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/TOLEDO F049.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Tektro hydraulic oil F+R disc brake',
+				display: 'LCD display',
+				battery: '36V 12.8Ah',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*4.0',
+			},
+		},
+		{
+			name: 'Windsor',
+			code: 'F050',
+			category: 'folding',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F050/F050.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/WINDSOR F050.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Suspension front fork',
+				brake: 'Tektro F+R disc brake',
+				display: 'LED display',
+				battery: '48V 10Ah',
+				motor: 'Rear motor 48V 500W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*4.0',
+			},
+		},
+
+		// Foalding Bikes
+
+		{
+			name: 'Lil E',
+			code: 'SC-01',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_LILE/LILE.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: 'Steel frame',
+				groundDistance: '15cm',
+				brake: 'Front electronic brake, rear disc brake',
+				battery: '36V 7.5Ah',
+				motor: '350W Brushless motor',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 14*2.5',
 			},
 		},
 	]
@@ -623,7 +755,7 @@ const BikeScreen = () => {
 
 	return (
 		<div className='container-fluid height-100 p-0 width-100'>
-			<div className='d-lg-flex h-100 p-0 bg-dark'>
+			<div className='d-lg-flex h-100 p-0 '>
 				<div
 					id='model-screen'
 					className={`h-100  position-relative ${
@@ -638,44 +770,7 @@ const BikeScreen = () => {
 						<i class='fa-solid fa-chevron-left '></i>
 					</button>
 
-					<button
-						className={`collapse-btn-mobile d-block d-lg-none  `}
-						onClick={() => setCollapseMobile(!collapseMobile)}>
-						<i
-							class={`fa-solid fa-chevron-left ${
-								collapseMobile && 'rotate'
-							}`}></i>
-					</button>
-
 					{/* ..... */}
-
-					<div
-						className={`bike-list-mobile  pl-3 mb-2   ${
-							!collapseMobile ? 'd-none' : 'd-flex'
-						} `}>
-						{allBikes.map((b, i) => (
-							<div
-								onClick={() => setBike(i)}
-								style={{
-									backgroundImage: 'url(' + b.background + ')',
-									backgroundSize: 'cover',
-									cursor: 'pointer',
-								}}
-								className='bike-card p-2   mr-3 d-flex justify-content-evenly  '>
-								<div className='pl-2 align-items-center d-flex'>
-									<h2 className='text-light'>{b.name}</h2>
-								</div>
-								<div className=''>
-									<img
-										src={b.poster}
-										className='img-fluid'
-										width={150}
-										alt=''
-									/>
-								</div>
-							</div>
-						))}
-					</div>
 
 					{/* <select
 						id='change-bike'
@@ -688,26 +783,13 @@ const BikeScreen = () => {
 						))}
 					</select> */}
 
-					<div
-						className={` h-100 main-div ${
-							bike === 0
-								? 'xplorer'
-								: bike === 1
-								? 'glyder'
-								: bike === 2
-								? 'dolphine'
-								: bike === 5
-								? 'viper'
-								: bike === 4
-								? 'shanghai'
-								: ''
-						} `}>
+					<div className={` h-100 main-div  `}>
 						<model-viewer
 							id='hotspot-camera-view-demo'
 							bounds='tight'
 							className=''
 							enable-pan
-							src={''}
+							src={allBikes[bike].model}
 							ar
 							interaction-prompt='none'
 							ar-placement='floor'
@@ -748,25 +830,13 @@ const BikeScreen = () => {
 						<div className='d-flex justify-content-between '>
 							<h4 className='mb-2'>EM Bikes</h4>
 						</div>
-						<div className='pt-4 pb-4'>
-							<img src='./1.jpg' className='img-fluid' alt='' />
-						</div>
+
 						<div className='d-flex d-lg-block'>
 							{allBikes.map((b, i) => (
 								<div
 									onClick={() => setBike(i)}
-									style={{
-										backgroundImage: 'url(' + b.background + ')',
-										backgroundSize: 'cover',
-										cursor: 'pointer',
-									}}
 									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
-									<div
-										style={{ width: '40%' }}
-										className='pl-2 align-items-center d-flex'>
-										<h2 className='text-light'>{b.name}</h2>
-									</div>
-									<div style={{ width: '60%' }} className=''>
+									<div className='pt-4 pb-4'>
 										<img src={b.poster} className='img-fluid' alt='' />
 									</div>
 								</div>
