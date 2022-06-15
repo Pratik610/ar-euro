@@ -12,7 +12,7 @@ const registerSchema = mongoose.Schema(
 			type: Number,
 		},
 		companyName: {
-			type: Number,
+			type: String,
 		},
 	},
 	{

@@ -1,0 +1,48 @@
+
+.main{
+    border-radius: 50px;
+       
+        box-shadow: 10px 10px 50px #7958a0,
+            -10px -10px 50px #997fb7;
+}
+.mobile-form input {
+    background-color: rgb(18, 1, 42) !important;
+    color: white !important;
+    border: none ;
+    outline: none !important;
+   
+    /* border-bottom: 2px solid rgb(172, 162, 177); */
+  
+    
+        box-shadow: 2px 2px 4px #5f5278;
+           
+}
+.mobile-form label{
+    color:rgb(189, 187, 183);
+    font-weight: 500 !important;
+}
+.mobile-form button{
+    
+    border: 5px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    width: 60%;
+   
+    font-weight: 500;
+
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 700px) {
+    .mobile-form{
+      
+        position:absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        margin: auto;
+    }
+}

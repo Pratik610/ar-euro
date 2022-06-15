@@ -13,7 +13,7 @@ const BikeScreen = () => {
 			name: 'T-Rex',
 			code: 'M006',
 			category: 'mtb',
-			model: './Japan/XPL.gltf',
+			model: '.',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -801,12 +801,22 @@ const BikeScreen = () => {
 							environment-image='neutral'
 							shadow-intensity='3'>
 							<div className='load position-relative h-100 w-100 bg-em'>
-								<div className='main-load'>
+								<div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
+									<div className='cube'>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+								{/* <div className='main-load'>
 									<span class='loader'></span>
 									<p className='text-center percentage text-light text-bold'>
 										0%
 									</p>
-								</div>
+								</div> */}
 							</div>
 
 							<div className=''>
@@ -827,8 +837,24 @@ const BikeScreen = () => {
 						collapse ? 'open-list' : 'close-list'
 					}`}>
 					<div className='main-list height-100 overflow-auto p-4 '>
-						<div className='d-flex justify-content-between '>
-							<h4 className='mb-2'>EM Bikes</h4>
+						<div className='position-fixed '>
+							<div className='d-flex justify-content-between  align-items-center '>
+								<h4 className='mb-2'>EM Bikes</h4>
+								<div className='form-floating' style={{ width: '45%' }}>
+									<select
+										class='form-select'
+										id='floatingSelect'
+										aria-label='Floating label select example'>
+										<option value='all' selected>
+											All
+										</option>
+										<option value='mtb'>Mountain</option>
+										<option value='city'>City</option>
+										<option value='foalding'>Foalding</option>
+									</select>
+									<label for='floatingSelect'>Select Category</label>
+								</div>
+							</div>
 						</div>
 
 						<div className='d-flex d-lg-block'>
