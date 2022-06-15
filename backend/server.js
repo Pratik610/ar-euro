@@ -63,6 +63,14 @@ const sendMail = (reciver) => {
 
 const __dirname = path.resolve()
 app.use('/posters', express.static(path.join(__dirname, '/posters')))
+if (process.env.ENVIRONMENT === 'production') {
+	app.use(express.static(path.join(__dirname, '/ar-euro/build')))
+
+	app.get('*', (req, res) =>
+		res.sendFile(path.resolve(__dirname, 'ar-euro', 'build', 'index.html'))
+	)
+}
+
 
 app.listen(
 	process.env.PORT,
