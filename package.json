@@ -6,7 +6,8 @@
 	"main": "index.js",
 	"scripts": {
 		"server": "node ./backend/server.js",
-		"dev": "nodemon ./backend/server.js"
+		"dev": "nodemon ./backend/server.js",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ar-euro && npm run build --prefix ar-euro"
 	},
 	"keywords": [],
 	"author": "",

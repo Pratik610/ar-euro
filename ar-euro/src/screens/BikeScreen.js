@@ -753,6 +753,12 @@ const BikeScreen = () => {
 			.addEventListener('progress', onProgress)
 	}, [bike])
 
+
+	const configBike = (i)=>{
+		setBike(i)
+		setCollapseMobile(!collapseMobile)
+	}
+
 	return (
 		<div className='container-fluid height-100 p-0 width-100'>
 			<div className='d-lg-flex h-100 p-0 '>
@@ -802,6 +808,7 @@ const BikeScreen = () => {
 							shadow-intensity='3'>
 							<div className='load position-relative h-100 w-100 bg-em'>
 								<div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
+									<div>
 									<div className='cube'>
 										<div></div>
 										<div></div>
@@ -810,6 +817,11 @@ const BikeScreen = () => {
 										<div></div>
 										<div></div>
 									</div>
+									<p className='text-center mt-3 percentage text-light text-bold'>
+										0%
+									</p>
+									</div>
+								
 								</div>
 								{/* <div className='main-load'>
 									<span class='loader'></span>
@@ -818,9 +830,32 @@ const BikeScreen = () => {
 									</p>
 								</div> */}
 							</div>
-
-							<div className=''>
-								<div className=''></div>
+							
+							<div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
+								
+								
+								
+									<div className=''>
+										<p className='mb-0'>Frame</p>
+										<h5>{allBikes[bike].specs.frame}</h5>
+									</div>
+									<div className=''>
+										<p className='mb-0'>Battery</p>
+										<h5>{allBikes[bike].specs.battery}</h5>
+									</div>
+									<div className=''>
+										<p className='mb-0'>Motor</p>
+										<h5>{allBikes[bike].specs.motor}</h5>
+									</div>
+									<div className=''>
+										<p className='mb-0'>Gear</p>
+										<h5>{allBikes[bike].specs.gear}</h5>
+									</div>
+								
+								
+								
+								
+								
 							</div>
 
 							<button slot='ar-button' id='ar-button'>
@@ -829,6 +864,41 @@ const BikeScreen = () => {
 							</button>
 							<div id='ar-prompt'></div>
 						</model-viewer>
+
+
+						<button
+							className={`collapse-btn-mobile d-lg-none d-block  `}
+							onClick={() => setCollapseMobile(!collapseMobile)}>
+							<i className={`fa-solid fa-chevron-up  `}></i>
+							</button>
+						{/* .......... */}
+						<div className={` bg-light  ${collapseMobile && 'mobile-list animate__animated animate__fadeInUp'} `} >
+							
+							<div className='bg-light' style={{top:'0%'}}>
+
+							<div className='position-sticky bg-light  pt-4' style={{top:'0%'}}>
+								<div className='d-flex justify-content-between  align-items-center '>
+									<h4 className='mb-2'>EM Bikes</h4>
+									<button
+							className={` d-lg-none d-block  `}
+							onClick={() => setCollapseMobile(!collapseMobile)}>
+							<i className={`fa-solid fa-chevron-up  `}></i>
+							</button>
+								</div>
+							</div>	
+
+							{allBikes.map((b, i) => (
+									<div
+										onClick={() => configBike(i)}
+										className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
+										<div className='pt-4 pb-4'>
+											<img src={b.poster} className='img-fluid' alt='' />
+										</div>
+									</div>
+							))}
+
+							</div>
+						</div>
 					</div>
 				</div>
 				<div
@@ -836,8 +906,8 @@ const BikeScreen = () => {
 					className={`h-100 bg-light d-none d-lg-block  ${
 						collapse ? 'open-list' : 'close-list'
 					}`}>
-					<div className='main-list height-100 overflow-auto p-4 '>
-						<div className='position-fixed '>
+					<div className='main-list height-100 overflow-auto p-4 pt-0 '>
+						<div className='position-sticky bg-light  pt-4' style={{top:'0%'}}>
 							<div className='d-flex justify-content-between  align-items-center '>
 								<h4 className='mb-2'>EM Bikes</h4>
 								<div className='form-floating' style={{ width: '45%' }}>
