@@ -5,14 +5,16 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"server": "node ./backend/server.js",
-		"dev": "nodemon ./backend/server.js",
+		"client": "npm start --prefix ar-euro",
+		"server": "nodemon ./backend/server.js",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ar-euro && npm run build --prefix ar-euro"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"concurrently": "^7.2.2",
 		"dotenv": "^16.0.1",
 		"express": "^4.18.1",
 		"express-async-handler": "^1.2.0",

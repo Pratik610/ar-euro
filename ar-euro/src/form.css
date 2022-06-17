@@ -10,11 +10,11 @@
     color: white !important;
     border: none ;
     outline: none !important;
-   
+    /* border-radius: 5px; */
     /* border-bottom: 2px solid rgb(172, 162, 177); */
   
     
-        box-shadow: 2px 2px 4px #5f5278;
+        box-shadow: 2px 2px 5px #5f5278;
            
 }
 .mobile-form label{

@@ -5,6 +5,7 @@ import logo from '../images/whitepng.png'
 const BikeScreen = () => {
 	const [collapse, setCollapse] = useState(false)
 	const [collapseMobile, setCollapseMobile] = useState(false)
+	const [category, setCategory] = useState('all')
 
 	const [bike, setBike] = useState(0)
 	const allBikes = [
@@ -13,9 +14,10 @@ const BikeScreen = () => {
 			name: 'T-Rex',
 			code: 'M006',
 			category: 'mtb',
-			model: '.',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M030/M030.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
+			// bgColor:"linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);",
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Suspension Front Fork ',
@@ -54,6 +56,7 @@ const BikeScreen = () => {
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M030/M030.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/CRUSADER M030.png',
+			bgColor:"background: rgb(124,173,231);background: linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);",
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Hydraulic Oil Supension Front Fork with lock',
@@ -149,7 +152,7 @@ const BikeScreen = () => {
 			category: 'mtb',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M051/m051.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './posters/Lucia M051.png',
+			poster: './posters/Lucia-M051.png',
 			specs: {
 				frame: 'Carbon fiber',
 				frontFork: 'Hydraulic,adjustent to locked,SRAMs',
@@ -789,7 +792,7 @@ const BikeScreen = () => {
 						))}
 					</select> */}
 
-					<div className={` h-100 main-div  `}>
+					<div className={` h-100 main-div  ` } >
 						<model-viewer
 							id='hotspot-camera-view-demo'
 							bounds='tight'
@@ -831,7 +834,7 @@ const BikeScreen = () => {
 								</div> */}
 							</div>
 							
-							<div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
+							{/* <div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
 								
 								
 								
@@ -856,7 +859,16 @@ const BikeScreen = () => {
 								
 								
 								
-							</div>
+							</div> */}
+
+
+							{/* aanotations */}
+							{/* <button class="Hotspot" slot="hotspot-3" data-position="0.2749437352872653m 1.201393338293662m -0.061638826362098165m" data-normal="0m -0.015809070898161134m 0.9998750288297718m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">bike</div>
+    </button> */}
+
+
+							{/* ........ */}
 
 							<button slot='ar-button' id='ar-button'>
 								<i class='fa-solid d-block d-lg-none fa-vr-cardboard'></i>
@@ -899,6 +911,8 @@ const BikeScreen = () => {
 
 							</div>
 						</div>
+
+
 					</div>
 				</div>
 				<div
@@ -914,29 +928,45 @@ const BikeScreen = () => {
 									<select
 										class='form-select'
 										id='floatingSelect'
+										onChange={(e)=> setCategory(e.target.value)}
 										aria-label='Floating label select example'>
-										<option value='all' selected>
+										<option value='all'   selected>
 											All
 										</option>
-										<option value='mtb'>Mountain</option>
-										<option value='city'>City</option>
-										<option value='foalding'>Foalding</option>
+										<option value='mtb' >Mountain</option>
+										<option value='city' >City</option>
+										<option value='folding'>Foalding</option>
 									</select>
-									<label for='floatingSelect'>Select Category</label>
+									<label for='floatingSelect'>Category</label>
 								</div>
 							</div>
 						</div>
-
+						
 						<div className='d-flex d-lg-block'>
-							{allBikes.map((b, i) => (
-								<div
+						
+
+							{
+									category === 'all' &&  allBikes.map((b,i)=> <div
+									onClick={() => setBike(i)}
+									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
+										<div className='pt-4 pb-4'>
+											<img src={b.poster} className='img-fluid' alt='' />
+										</div>
+									</div>)
+							}
+							
+						{allBikes.map((b, i) => (
+								
+								
+								b.category === category  && <div
 									onClick={() => setBike(i)}
 									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
 									<div className='pt-4 pb-4'>
 										<img src={b.poster} className='img-fluid' alt='' />
 									</div>
-								</div>
-							))}
+									</div>
+							
+							))} 
 						</div>
 					</div>
 				</div>

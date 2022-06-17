@@ -41,7 +41,7 @@ const sendMail = (reciver) => {
 		port: 587,
 		auth: {
 			user: 'tech@emotorad.com',
-			pass: 'mrevnnfaawdftbwk',
+			pass: process.env.PASS,
 		},
 	})
 

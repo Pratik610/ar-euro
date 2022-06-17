@@ -22,6 +22,7 @@ h1 {
 .main-div{
     background-color: grey;
     overflow: hidden;
+    /* background: linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);; */
 }
 
 .main-form label {
@@ -157,8 +158,13 @@ model-viewer#interaction {
 
 #ar-button {
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 3%;
+    right: 2%;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    padding: 10px 10px;
+    border-radius: 5px;
     transform: translate(-50%);
 }
 
@@ -200,13 +206,13 @@ model-viewer#interaction {
     }
 }
 
-.xplorer {
-    /* background: rgb(179, 98, 98);
+/* .xplorer {
+    background: rgb(179, 98, 98);
     background: linear-gradient(90deg, rgba(179, 98, 98, 1) 0%, rgba(201, 19, 19, 1) 100%); */
-    background-color: grey;
-}
+    /* background-color: grey;
+} */
 
-.glyder {
+/* .glyder {
 
     background: rgb(163, 157, 145);
     background: linear-gradient(90deg, rgba(163, 157, 145, 1) 0%, rgba(84, 88, 22, 1) 100%);
@@ -226,13 +232,13 @@ model-viewer#interaction {
 .viper {
     background: rgb(60, 182, 184);
     background: linear-gradient(90deg, rgba(60, 182, 184, 1) 0%, rgba(0, 81, 82, 1) 100%);
-}
+} */
 
 .specs{
     position: absolute;
     z-index: -2;
     left: 0%;
-    bottom: 3%;
+    bottom: 10%;
     border-radius: 10px;
     background-color: rgba(red, green, blue, .7);
 }

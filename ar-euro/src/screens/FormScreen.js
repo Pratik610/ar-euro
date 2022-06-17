@@ -35,7 +35,7 @@ const FormScreen = () => {
 		<div
 			className='height-100 '
 			style={{ backgroundImage: `url('${bg}')`, backgroundSize: 'cover' }}>
-			{!loading && (
+			{loading && (
 				<div
 					style={{ zIndex: '99' }}
 					className='h-100 w-100 bg-dark position-absolute d-flex align-items-center justify-content-center'>
@@ -85,7 +85,7 @@ const FormScreen = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-6 p-4'>
+						<div className='col-6 ps-4 pe-5 ' style={{paddingTop:'5em'}}>
 							<form onSubmit={register}>
 								<h3 className='form-heading mb-4'>Registration Form</h3>
 								<div className='mb-4'>
@@ -124,12 +124,7 @@ const FormScreen = () => {
 										className='d-block inp-form'
 									/>
 								</div>
-								{/* <div className='mb-4 d-flex'>
-									<input type='checkbox' className='mt-2' />
-									<label className='d-inline mt-0 ms-2'>
-										By signing up, you agree to the Terms and Conditions
-									</label>
-								</div> */}
+								
 
 								<div className='mt-5'>
 									<button type='submit' className='submit-btn'>
