@@ -1,43 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import '../bike.css'
 import logo from '../images/whitepng.png'
-import loading from '../images/loading-1.gif'
 
 const BikeScreen = () => {
-	const [collapse, setCollapse] = useState(true)
+	const [collapse, setCollapse] = useState(false)
 	const [collapseMobile, setCollapseMobile] = useState(false)
 	const [category, setCategory] = useState('all')
 
 	const [bike, setBike] = useState(0)
 	const allBikes = [
 		// Mountain Bikes
-		{
-			name: 'T-Rex',
-			code: 'M006',
-			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M030/M030.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			// bgColor:"linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);",
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension Front Fork ',
-				rearShork: '',
-				brake: 'F+R disc brake',
-				display: 'LCD display',
-				battery: '48V 10Ah',
-				motor: 'Rear motor 48V 500W',
-				gear: 'Shimano 7 speed',
-				tire: '27.5*2.1',
-			},
-		},
+		
 		{
 			name: 'Fireblade',
 			code: 'M011',
 			category: 'mtb',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m011/M011.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/Fireblade M011.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Hydraulic Oil front fork',
@@ -133,8 +113,8 @@ const BikeScreen = () => {
 			code: 'M047',
 			category: 'mtb',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m047/M047.gltf',
-			background: './posters/T-REX PRO M047.png',
-			poster: './images/exp1.png',
+			background: '',
+			poster: './posters/T-REX PRO M047.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Suspension front fork with lock',
@@ -172,7 +152,7 @@ const BikeScreen = () => {
 			category: 'mtb',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m052/M052.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/DUNE M052.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Suspension front fork with lock',
@@ -205,25 +185,7 @@ const BikeScreen = () => {
 				tire: '27.5*2.251 inches',
 			},
 		},
-		{
-			name: 'Capella',
-			code: 'M054',
-			category: 'mtb',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Hydraulic Oil Supension Front Fork with lock',
-				rearShork: '',
-				brake: 'Tektro mechanical F+R disc brake',
-				display: 'LCD display',
-				battery: '48V 10.4Ah',
-				motor: 'Middle motor 36V 350W',
-				gear: 'Shimano 9 speed',
-				tire: 'CST 27.5*3.0inches',
-			},
-		},
+		
 		{
 			name: 'Tailwind',
 			code: 'M055',
@@ -386,7 +348,7 @@ const BikeScreen = () => {
 			category: 'city',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c042/C042.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/Simba C042.png',
 			specs: {
 				frame: 'Carbon fiber',
 				frontFork: 'SR Suntour Magnesium alloy, front suspension',
@@ -422,7 +384,7 @@ const BikeScreen = () => {
 			name: 'Vega',
 			code: 'C044',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltff',
 			background: './images/bg-xplorer.png',
 			poster: './posters/VEGA C044.png',
 			specs: {
@@ -443,7 +405,7 @@ const BikeScreen = () => {
 			category: 'city',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C045/C045.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/Polaris C045.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Suspension front fork',
@@ -480,7 +442,7 @@ const BikeScreen = () => {
 			category: 'city',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C053/C053.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './posters/DUNE M052.png',
+			poster: './posters/Plymouth C053.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Alloy Suspension front fork',
@@ -498,7 +460,7 @@ const BikeScreen = () => {
 			category: 'city',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c054/C054.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './posters/BROOKLYN C054.png',
+			poster: './posters/Brooklyn C054.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Alloy Suspension front fork',
@@ -508,6 +470,25 @@ const BikeScreen = () => {
 				motor: 'Rear motor 36V 250W',
 				gear: 'Shimano 7 speed',
 				tire: 'CST 26*2.35',
+			},
+		},
+
+		{
+			name: 'Shanghai',
+			code: 'C039',
+			category: 'city',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/SHANGHAI C039.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Alloy front fork',
+				brake: 'Tektro Hydraulic F+R disc brake',
+				display: '5 lever Color LCD display  APT 860C',
+				battery: 'LG 36V 9.6Ah ,quick release with USB ',
+				motor: 'Bafang rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 700*45c with reflective',
 			},
 		},
 		{
@@ -534,7 +515,7 @@ const BikeScreen = () => {
 			category: 'city',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c056/C056.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './posters/SANTORINI M056.png',
+			poster: './posters/SANTORINI C056.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Suspension front fork',
@@ -564,43 +545,6 @@ const BikeScreen = () => {
 				motor: 'Rear motor  48V 250W/500W',
 				gear: 'Shimano 7 speed',
 				tire: 'CST 20*4.0',
-			},
-		},
-
-		{
-			name: 'Strada',
-			code: 'F046',
-			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f046/F046.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './posters/STRADA F046.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'ZOOM Suspention front fork',
-				brake: 'Tektro F+R disc brake',
-				display: 'LCD display',
-				battery: 'LG 36V 9.6 Ah',
-				motor: 'Bafang rear motor 36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'Kenda 20*2.35',
-			},
-		},
-		{
-			name: 'Rigel',
-			code: 'F042',
-			category: 'folding',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: 'Meganisium-alloy',
-				frontFork: 'Steel front fork',
-				brake: 'F+R mechanical disc brake   ',
-				display: 'LCD display',
-				battery: '36V 7.5Ah',
-				motor: 'Rear motor 36V 250W ',
-				gear: 'Shimano 6 speed',
-				tire: 'CST 16*2.125',
 			},
 		},
 		{
@@ -640,11 +584,31 @@ const BikeScreen = () => {
 				tire: 'CST 20*4.0',
 			},
 		},
+		
+		{
+			name: 'Rigel',
+			code: 'F042',
+			category: 'folding',
+			model: './Japan/XPL.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './images/exp1.png',
+			specs: {
+				frame: 'Meganisium-alloy',
+				frontFork: 'Steel front fork',
+				brake: 'F+R mechanical disc brake   ',
+				display: 'LCD display',
+				battery: '36V 7.5Ah',
+				motor: 'Rear motor 36V 250W ',
+				gear: 'Shimano 6 speed',
+				tire: 'CST 16*2.125',
+			},
+		},
+	
 		{
 			name: 'Echo',
 			code: 'F043',
 			category: 'folding',
-			model:'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f043/F043.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f043/F043.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/ECHO F043.png',
 			specs: {
@@ -656,6 +620,24 @@ const BikeScreen = () => {
 				motor: 'Rear motor  36V 250W',
 				gear: 'Shimano 7 speed',
 				tire: 'CST 20*1.95',
+			},
+		},
+		{
+			name: 'Strada',
+			code: 'F046',
+			category: 'folding',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f046/F046.gltf',
+			background: './images/bg-xplorer.png',
+			poster: './posters/STRADA F046.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'ZOOM Suspention front fork',
+				brake: 'Tektro F+R disc brake',
+				display: 'LCD display',
+				battery: 'LG 36V 9.6 Ah',
+				motor: 'Bafang rear motor 36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'Kenda 20*2.35',
 			},
 		},
 		{
@@ -700,9 +682,10 @@ const BikeScreen = () => {
 		{
 			name: 'Lil E',
 			code: 'SC-01',
+			category: 'folding',
 			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/lile/LILE_India.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/Lil e SC01.png',
 			specs: {
 				frame: 'Steel frame',
 				groundDistance: '15cm',
@@ -791,12 +774,8 @@ const BikeScreen = () => {
 							camera-orbit='-90deg 80deg   '
 							environment-image='neutral'
 							shadow-intensity='3'>
-							<div className='load position-relative h-100 w-100 d-flex align-items-center justify-content-center' style={{backgroundColor:'#fff'}}>
-								<img src={loading} className='  ' style={{width:'25%'}} />
-								{/* <p className='text-center mt-3 percentage text-light text-bold'>
-										0%
-								</p> */}
-								{/* <div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
+							<div className='load position-relative h-100 w-100 bg-em'>
+								<div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
 									<div>
 									<div className='cube'>
 										<div></div>
@@ -806,17 +785,25 @@ const BikeScreen = () => {
 										<div></div>
 										<div></div>
 									</div>
-									
+									<p className='text-center mt-3 percentage text-light text-bold'>
+										0%
+									</p>
 									</div>
 								
+								</div>
+								{/* <div className='main-load'>
+									<span class='loader'></span>
+									<p className='text-center percentage text-light text-bold'>
+										0%
+									</p>
 								</div> */}
-								
 							</div>
-
-
 							
 							
 							{/* <div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
+								
+								
+								
 									<div className=''>
 										<p className='mb-0'>Frame</p>
 										<h5>{allBikes[bike].specs.frame}</h5>
@@ -832,8 +819,20 @@ const BikeScreen = () => {
 									<div className=''>
 										<p className='mb-0'>Gear</p>
 										<h5>{allBikes[bike].specs.gear}</h5>
-									</div>								
+									</div>
+								
+								
+								
+								
+								
 							</div> */}
+
+
+							{/* aanotations */}
+							{/* <button class="Hotspot" slot="hotspot-3" data-position="0.2749437352872653m 1.201393338293662m -0.061638826362098165m" data-normal="0m -0.015809070898161134m 0.9998750288297718m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">bike</div>
+    </button> */}
+
 
 							{/* ........ */}
 
@@ -851,7 +850,7 @@ const BikeScreen = () => {
 							<i className={`fa-solid fa-chevron-up  `}></i>
 							</button>
 						{/* .......... */}
-						<div className={` bg-light d-lg-none  ${collapseMobile && 'mobile-list animate__animated animate__fadeInUp'} `} >
+						<div className={` bg-light  ${collapseMobile && 'mobile-list animate__animated animate__fadeInUp'} `} >
 							
 							<div className='bg-light' style={{top:'0%'}}>
 
@@ -915,9 +914,9 @@ const BikeScreen = () => {
 							{
 									category === 'all' &&  allBikes.map((b,i)=> <div
 									onClick={() => setBike(i)}
-									className='bike-card bg-danger p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
+									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
 										<div className='pt-4 pb-4'>
-										<h1>{b.name}</h1>
+											<img src={b.poster} className='img-fluid' alt='' />
 										</div>
 									</div>)
 							}
@@ -929,9 +928,7 @@ const BikeScreen = () => {
 									onClick={() => setBike(i)}
 									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
 									<div className='pt-4 pb-4'>
-									 {
-									 <h1>{b.name}</h1>
-									 }	
+										<img src={b.poster} className='img-fluid' alt='' />
 									</div>
 									</div>
 							
