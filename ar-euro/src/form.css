@@ -2,19 +2,20 @@
 .main{
     border-radius: 50px;
        
-        box-shadow: 10px 10px 50px #7958a0,
-            -10px -10px 50px #997fb7;
+    box-shadow: 10px 10px 50px #385727,
+            -10px -10px 50px #1b5f15;
 }
 .mobile-form input {
-    background-color: rgb(18, 1, 42) !important;
+    /* background-color: rgb(18, 1, 42) !important; */
     color: white !important;
+    background-color: white;
     border: none ;
     outline: none !important;
     /* border-radius: 5px; */
     /* border-bottom: 2px solid rgb(172, 162, 177); */
   
     
-        box-shadow: 2px 2px 5px #5f5278;
+    box-shadow: 2px 2px 5px #5f5278;
            
 }
 .mobile-form label{
@@ -24,10 +25,12 @@
 .mobile-form button{
     
     border: 5px;
+    background-color: #10b068;
+    color: white;
     padding: 10px;
     display: block;
     margin: auto;
-    width: 60%;
+    width: 40%;
    
     font-weight: 500;
 

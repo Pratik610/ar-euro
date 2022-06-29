@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import '../bike.css'
 import logo from '../images/whitepng.png'
+import loading from '../images/loading-1.gif'
 
 const BikeScreen = () => {
-	const [collapse, setCollapse] = useState(false)
+	const [collapse, setCollapse] = useState(true)
 	const [collapseMobile, setCollapseMobile] = useState(false)
 	const [category, setCategory] = useState('all')
 
@@ -34,7 +35,7 @@ const BikeScreen = () => {
 			name: 'Fireblade',
 			code: 'M011',
 			category: 'mtb',
-			model: './Japan/XPL.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m011/M011.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -53,7 +54,7 @@ const BikeScreen = () => {
 			name: 'Crusader',
 			code: 'M030',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M030/M030.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m030/M030.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/CRUSADER M030.png',
 			bgColor:"background: rgb(124,173,231);background: linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);",
@@ -74,7 +75,7 @@ const BikeScreen = () => {
 			code: 'M037',
 			category: 'mtb',
 			model:
-				'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M037/newtripe.gltf',
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M037_02/M037-02.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/TREIP E M037.png',
 			specs: {
@@ -93,7 +94,7 @@ const BikeScreen = () => {
 			name: 'ROME',
 			code: 'M041',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M041/M041.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m041/M041.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/ROME M041.png',
 			specs: {
@@ -112,7 +113,7 @@ const BikeScreen = () => {
 			name: 'EMX',
 			code: 'M042',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_EMX/EMX.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/emx/EMX.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/EMX M042.png',
 			specs: {
@@ -131,7 +132,7 @@ const BikeScreen = () => {
 			name: 'T-REX Pro',
 			code: 'M047',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M047/M047.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m047/M047.gltf',
 			background: './posters/T-REX PRO M047.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -150,7 +151,7 @@ const BikeScreen = () => {
 			name: 'Lucia',
 			code: 'M051',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M051/m051.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M051/m051.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Lucia-M051.png',
 			specs: {
@@ -169,7 +170,7 @@ const BikeScreen = () => {
 			name: 'Dune',
 			code: 'M052',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M052/M052.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m052/M052.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -189,7 +190,7 @@ const BikeScreen = () => {
 			name: 'Spark',
 			code: 'M053',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M053/m053.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M053/m053.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SPARK M053.png',
 			specs: {
@@ -247,7 +248,7 @@ const BikeScreen = () => {
 			name: 'Athena',
 			code: 'M057',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M057/m057.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M057/m057.gltf',
 			background: '',
 			poster: './posters/ATHENA M057.png',
 			specs: {
@@ -267,7 +268,7 @@ const BikeScreen = () => {
 			name: 'Phoenix',
 			code: 'M058',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_M058/M058.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M058/M058.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/PHEONIX M058.png',
 			specs: {
@@ -327,7 +328,7 @@ const BikeScreen = () => {
 			name: 'Viper',
 			code: 'C037',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C037/C037.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C037/c037.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/VIPER C037.png',
 			specs: {
@@ -345,7 +346,7 @@ const BikeScreen = () => {
 			name: 'Sydney',
 			code: 'C038',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C038/C038.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c038/C038.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SYDNEY C038.png',
 			specs: {
@@ -364,7 +365,7 @@ const BikeScreen = () => {
 			name: 'Dove',
 			code: 'C041',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C041/C041.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c041/C041.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DOVE C041.png',
 			specs: {
@@ -383,7 +384,7 @@ const BikeScreen = () => {
 			name: 'Simba',
 			code: 'C042',
 			category: 'city',
-			model: '',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c042/C042.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -421,7 +422,7 @@ const BikeScreen = () => {
 			name: 'Vega',
 			code: 'C044',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C044/C044.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/VEGA C044.png',
 			specs: {
@@ -440,7 +441,7 @@ const BikeScreen = () => {
 			name: 'Polaris',
 			code: 'C045',
 			category: 'city',
-			model: './Japan/XPL.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C045/C045.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -477,7 +478,7 @@ const BikeScreen = () => {
 			name: 'Plymouth',
 			code: 'C053',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C053/C053.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C053/C053.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DUNE M052.png',
 			specs: {
@@ -495,7 +496,7 @@ const BikeScreen = () => {
 			name: 'Brooklyn',
 			code: 'C054',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C054/C054.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c054/C054.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/BROOKLYN C054.png',
 			specs: {
@@ -507,25 +508,6 @@ const BikeScreen = () => {
 				motor: 'Rear motor 36V 250W',
 				gear: 'Shimano 7 speed',
 				tire: 'CST 26*2.35',
-			},
-		},
-
-		{
-			name: 'Shanghai',
-			code: 'C039',
-			category: 'city',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './posters/SHANGHAI C039.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Alloy front fork',
-				brake: 'Tektro Hydraulic F+R disc brake',
-				display: '5 lever Color LCD display  APT 860C',
-				battery: 'LG 36V 9.6Ah ,quick release with USB ',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700*45c with reflective',
 			},
 		},
 		{
@@ -550,7 +532,7 @@ const BikeScreen = () => {
 			name: 'Santorini',
 			code: 'C056',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_C056/C056.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c056/C056.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SANTORINI M056.png',
 			specs: {
@@ -570,7 +552,7 @@ const BikeScreen = () => {
 			name: 'Touche',
 			code: 'F024',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F024/f024.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F024/f024.gltf',
 			background: './images/bg-xplorer.png',
 			poster: '../posters/TOUCHE F024.png',
 			specs: {
@@ -589,7 +571,7 @@ const BikeScreen = () => {
 			name: 'Strada',
 			code: 'F046',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F046/F046.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f046/F046.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/STRADA F046.png',
 			specs: {
@@ -625,7 +607,7 @@ const BikeScreen = () => {
 			name: 'Hefei',
 			code: 'F031',
 			category: 'folding',
-			model: './Japan/XPL.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F031/F031.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/hefie f031.png',
 			specs: {
@@ -644,7 +626,7 @@ const BikeScreen = () => {
 			code: 'F032',
 			category: 'folding',
 			model:
-				'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_DOODLE/Doodle.gltf',
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/doodle/Doodle.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DOODLE F032.png',
 			specs: {
@@ -662,7 +644,7 @@ const BikeScreen = () => {
 			name: 'Echo',
 			code: 'F043',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F043/F043.gltf',
+			model:'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f043/F043.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/ECHO F043.png',
 			specs: {
@@ -680,7 +662,7 @@ const BikeScreen = () => {
 			name: 'Toledo',
 			code: 'F049',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F049/F049.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F049/F049.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/TOLEDO F049.png',
 			specs: {
@@ -698,7 +680,7 @@ const BikeScreen = () => {
 			name: 'Windsor',
 			code: 'F050',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_F050/F050.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f050/F050.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/WINDSOR F050.png',
 			specs: {
@@ -718,7 +700,7 @@ const BikeScreen = () => {
 		{
 			name: 'Lil E',
 			code: 'SC-01',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/GLTF_LILE/LILE.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/lile/LILE_India.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './images/exp1.png',
 			specs: {
@@ -809,8 +791,12 @@ const BikeScreen = () => {
 							camera-orbit='-90deg 80deg   '
 							environment-image='neutral'
 							shadow-intensity='3'>
-							<div className='load position-relative h-100 w-100 bg-em'>
-								<div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
+							<div className='load position-relative h-100 w-100 d-flex align-items-center justify-content-center' style={{backgroundColor:'#fff'}}>
+								<img src={loading} className='  ' style={{width:'25%'}} />
+								{/* <p className='text-center mt-3 percentage text-light text-bold'>
+										0%
+								</p> */}
+								{/* <div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
 									<div>
 									<div className='cube'>
 										<div></div>
@@ -820,24 +806,17 @@ const BikeScreen = () => {
 										<div></div>
 										<div></div>
 									</div>
-									<p className='text-center mt-3 percentage text-light text-bold'>
-										0%
-									</p>
+									
 									</div>
 								
-								</div>
-								{/* <div className='main-load'>
-									<span class='loader'></span>
-									<p className='text-center percentage text-light text-bold'>
-										0%
-									</p>
 								</div> */}
+								
 							</div>
+
+
+							
 							
 							{/* <div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
-								
-								
-								
 									<div className=''>
 										<p className='mb-0'>Frame</p>
 										<h5>{allBikes[bike].specs.frame}</h5>
@@ -853,20 +832,8 @@ const BikeScreen = () => {
 									<div className=''>
 										<p className='mb-0'>Gear</p>
 										<h5>{allBikes[bike].specs.gear}</h5>
-									</div>
-								
-								
-								
-								
-								
+									</div>								
 							</div> */}
-
-
-							{/* aanotations */}
-							{/* <button class="Hotspot" slot="hotspot-3" data-position="0.2749437352872653m 1.201393338293662m -0.061638826362098165m" data-normal="0m -0.015809070898161134m 0.9998750288297718m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">bike</div>
-    </button> */}
-
 
 							{/* ........ */}
 
@@ -884,7 +851,7 @@ const BikeScreen = () => {
 							<i className={`fa-solid fa-chevron-up  `}></i>
 							</button>
 						{/* .......... */}
-						<div className={` bg-light  ${collapseMobile && 'mobile-list animate__animated animate__fadeInUp'} `} >
+						<div className={` bg-light d-lg-none  ${collapseMobile && 'mobile-list animate__animated animate__fadeInUp'} `} >
 							
 							<div className='bg-light' style={{top:'0%'}}>
 
@@ -948,9 +915,9 @@ const BikeScreen = () => {
 							{
 									category === 'all' &&  allBikes.map((b,i)=> <div
 									onClick={() => setBike(i)}
-									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
+									className='bike-card bg-danger p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
 										<div className='pt-4 pb-4'>
-											<img src={b.poster} className='img-fluid' alt='' />
+										<h1>{b.name}</h1>
 										</div>
 									</div>)
 							}
@@ -962,7 +929,9 @@ const BikeScreen = () => {
 									onClick={() => setBike(i)}
 									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
 									<div className='pt-4 pb-4'>
-										<img src={b.poster} className='img-fluid' alt='' />
+									 {
+									 <h1>{b.name}</h1>
+									 }	
 									</div>
 									</div>
 							

@@ -10,7 +10,8 @@ function App() {
 		<>
 			<Router>
 				<Routes>
-					<Route path='/' element={<FormScreen />} />
+					<Route path='/' element={<HomeScreen />} />
+					<Route path='/form' element={<FormScreen />} />
 					<Route path='/bikes' element={<BikeScreen />} />
 				</Routes>
 			</Router>

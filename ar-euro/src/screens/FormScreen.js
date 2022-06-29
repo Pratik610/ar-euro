@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import bg from '../images/bg.png'
 import '../form.css'
 import image from '../images/6.jpg'
-import logo from '../images/whitepng.png'
+import logo from '../images/GREEN PNG.png'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -33,8 +33,8 @@ const FormScreen = () => {
 	}
 	return (
 		<div
-			className='height-100 '
-			style={{ backgroundImage: `url('${bg}')`, backgroundSize: 'cover' }}>
+			className='height-100 ' style={{backgroundColor:'#10b068'}}
+		>
 			{loading && (
 				<div
 					style={{ zIndex: '99' }}
@@ -55,11 +55,11 @@ const FormScreen = () => {
 				</div>
 			)}
 			<div className='d-lg-flex align-items-center d-none  h-100'>
-				<div className='w-50 mx-auto'>
+				<div className=' mx-auto' style={{width:'60%'}}>
 					<div
 						className='row main'
 						style={{ height: '80vh', borderRadius: '10px' }}>
-						<div className='col-6 p-0 h-100 position-relative overflow-hidden'>
+						<div className='col-5 p-0 h-100 position-relative overflow-hidden'>
 							<img
 								src={image}
 								alt=''
@@ -85,10 +85,30 @@ const FormScreen = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-6 ps-4 pe-5 ' style={{paddingTop:'5em'}}>
+						<div className='col-7 ps-4 pe-5 ' style={{paddingTop:'5em'}}>
 							<form onSubmit={register}>
 								<h3 className='form-heading mb-4'>Registration Form</h3>
-								<div className='mb-4'>
+
+								<div class="form-floating mb-3 mt-5">
+ 										 <input type="text" class="form-control" value={name}
+										onChange={(e) => setName(e.target.value)} id="floatingInput" placeholder="name@example.com"/>
+ 										 <label for="floatingInput">Full Name</label>
+								</div>
+								<div class="form-floating mb-3">
+ 										 <input type="email"
+										 value={email}
+										 onChange={(e) => setEmail(e.target.value)}
+										 class="form-control" id="floatingInput" placeholder="name@example.com"/>
+ 										 <label for="floatingInput">Email address</label>
+								</div>	<div class="form-floating mb-3">
+ 										 <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+ 										 <label for="floatingInput">Phone Number</label>
+								</div>	<div class="form-floating mb-3">
+ 										 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+ 										 <label for="floatingInput">Company Name</label>
+								</div>
+
+								{/* <div className='mb-4'>
 									<label>Full Name:</label>
 									<input
 										type='text'
@@ -123,7 +143,7 @@ const FormScreen = () => {
 										onChange={(e) => setCompanyName(e.target.value)}
 										className='d-block inp-form'
 									/>
-								</div>
+								</div> */}
 								
 
 								<div className='mt-5'>
@@ -136,14 +156,14 @@ const FormScreen = () => {
 					</div>
 				</div>
 			</div>
-			<div className=' mobile-form  d-lg-none'>
+			<div className=' mobile-form bg-light  d-lg-none' style={{height:'100vh',paddingTop:'20%'}}>
 				<img
 					src={logo}
 					className='img-fluid d-block mx-auto pt-4'
 					width={180}
 					alt=''
 				/>
-				<p className='text-center text-light ' style={{ fontSize: '0.8em' }}>
+				<p className='text-center text-light text-dark ' style={{ fontSize: '0.8em' }}>
 					Blending the future of EV with Augmented Reality
 				</p>
 				<form onSubmit={register} className='p-3'>
@@ -162,6 +182,7 @@ const FormScreen = () => {
 						</label>
 					</div>
 					<div class='form-floating mb-4'>
+						<div></div>
 						<input
 							autoComplete='off'
 							type='email'
@@ -199,7 +220,7 @@ const FormScreen = () => {
 						/>
 						<label for='floatingPassword'>Company Name</label>
 					</div>
-					<button className='btn btn-primary'>Submit</button>
+					<button className='btn btn-submit'>Submit</button>
 				</form>
 			</div>
 		</div>
