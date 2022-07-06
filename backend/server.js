@@ -25,7 +25,7 @@ app.post(
 		})
 		if (registerUser) {
 			res.status(201).json({ message: 'Created' })
-			sendMail(email)
+			sendMail(email,name)
 		} else {
 			res.status(400)
 			throw new Error('invalid User Data')
@@ -33,7 +33,7 @@ app.post(
 	})
 )
 
-const sendMail = (reciver) => {
+const sendMail = (reciver,name) => {
 	var transporter = nodemailer.createTransport({
 		service: 'gmail',
 		host: 'smtp.gmail.com',
@@ -48,8 +48,12 @@ const sendMail = (reciver) => {
 	var mailOptions = {
 		from: 'tech@emotorad.com',
 		to: reciver,
-		subject: 'Sending Email using Node.js',
-		text: 'That was easy!',
+		subject: 'Thank you for visiting our booth',
+		html:`<b>Dear ${name}</b> <p>EMotorad extends a warm welcome to you. Thank you for visiting our booth and sharing interest in our vision. It would be great if we could connect and take this conversation further. </p> <p>EMotorad is an electric vehicle (EV) company that strives to help top brands from across the globe bring futuristic e-bikes to adventure seekers, daily commuters, or casual riders all over the world. We believe that ‘electric’ is the new future of mobility. We bring EV to consumers and deliver the product tailored to their requirements at a price they can afford; we like to call affordable luxury.
+		</p> <p>Let's keep taking strides for a more affordable and greener future.
+		</p> <p>Thank You, 
+		</p><p>Warm Regards,</p><p>EM Team 
+		</p>`,
 	}
 
 	transporter.sendMail(mailOptions, function (error, info) {

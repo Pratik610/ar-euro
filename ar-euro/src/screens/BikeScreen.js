@@ -10,12 +10,31 @@ const BikeScreen = () => {
 	const [bike, setBike] = useState(0)
 	const allBikes = [
 		// Mountain Bikes
+		{
+			name: 'T-REX',
+			code: 'M006',
+			category: 'mtb',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/trex%2Bbg/Trex+%2B+Black+And+Green.gltf',
+		
+			poster: './posters/trex M006.png',
+			specs: {
+				frame: '6061 aluminium alloy',
+				frontFork: 'Hydraulic Oil front fork',
+				rearShork: '',
+				brake: 'Tektro Hydraulic Oil F+R disc brake',
+				display: 'LCD display',
+				battery: '36V 10.4Ah',
+				motor: 'Rear motor 36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 26*4.0',
+			},
+		},
 		
 		{
 			name: 'Fireblade',
 			code: 'M011',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m011/M011.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M011/M011.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Fireblade M011.png',
 			specs: {
@@ -57,7 +76,7 @@ const BikeScreen = () => {
 			model:
 				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M037_02/M037-02.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './posters/TREIP E M037.png',
+			poster: './posters/TRIP E M037.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Oil Suspension Front Fork with lock',
@@ -93,7 +112,7 @@ const BikeScreen = () => {
 			name: 'EMX',
 			code: 'M042',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/emx/EMX.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/EMX/EMX.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/EMX M042.png',
 			specs: {
@@ -186,31 +205,13 @@ const BikeScreen = () => {
 			},
 		},
 		
-		{
-			name: 'Tailwind',
-			code: 'M055',
-			category: 'mtb',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Hydraulic Oil Supension Front Fork with lock',
-				rearShork: '',
-				brake: 'Tektro hydraulic oil F+R disc brakes',
-				display: 'LCD display',
-				battery: '36V 10.4Ah',
-				motor: 'Rear motor 36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 27.5*3.0inches',
-			},
-		},
+	
 
 		{
 			name: 'Athena',
 			code: 'M057',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M057/m057.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M057/M057.gltf',
 			background: '',
 			poster: './posters/ATHENA M057.png',
 			specs: {
@@ -248,43 +249,26 @@ const BikeScreen = () => {
 
 		// CITY Bikes
 
+		
 		{
-			name: 'Coco',
-			code: 'C003',
+			name: 'Schooner',
+			code: '3W001',
 			category: 'city',
-			model: './Japan/XPL.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/3W001/3W001.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/SCHOONER 3W01.png',
 			specs: {
 				frame: '6061 aluminium alloy',
-				frontFork: 'Steel front fork',
-				brake: 'F+R disc brake',
+				frontFork: 'Suspension front fork',
+				brake: 'F+R mechanical disc brake',
 				display: 'LCD  display',
 				battery: '36V 10.4Ah',
 				motor: 'Rear motor  36V 250W',
 				gear: 'Shimano 7 speed',
-				tire: 'CST 26*1.75',
+				tire: 'CST 700c x 38c',
 			},
 		},
-
-		{
-			name: 'Eighty Six',
-			code: 'C010',
-			category: 'city',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Hydraulic Oil Suspension Front Fork with lock',
-				brake: 'Tektro mechanical F+R  disc brake',
-				display: 'LCD  display',
-				battery: '36V 15Ah',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700*38C',
-			},
-		},
+		
 
 		{
 			name: 'Viper',
@@ -327,7 +311,7 @@ const BikeScreen = () => {
 			name: 'Dove',
 			code: 'C041',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c041/C041.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C041/C041.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DOVE C041.png',
 			specs: {
@@ -361,24 +345,7 @@ const BikeScreen = () => {
 			},
 		},
 
-		{
-			name: 'Venlo',
-			code: 'C043',
-			category: 'city',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'F+R mechanical disc brake',
-				display: 'LCD display',
-				battery: '36V 10.4Ah ',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700C*38C',
-			},
-		},
+		
 
 		{
 			name: 'Vega',
@@ -418,12 +385,12 @@ const BikeScreen = () => {
 			},
 		},
 		{
-			name: 'Castor',
-			code: 'C046',
+			name: 'BRITA',
+			code: 'C047',
 			category: 'city',
-			model: './Japan/XPL.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/BRITA C047.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Suspension front fork',
@@ -473,42 +440,6 @@ const BikeScreen = () => {
 			},
 		},
 
-		{
-			name: 'Shanghai',
-			code: 'C039',
-			category: 'city',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './posters/SHANGHAI C039.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Alloy front fork',
-				brake: 'Tektro Hydraulic F+R disc brake',
-				display: '5 lever Color LCD display  APT 860C',
-				battery: 'LG 36V 9.6Ah ,quick release with USB ',
-				motor: 'Bafang rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700*45c with reflective',
-			},
-		},
-		{
-			name: 'Iris',
-			code: 'C055',
-			category: 'city',
-			model: './Japan/XPL.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
-			specs: {
-				frame: 'Advanced Carbon race frame',
-				frontFork: 'Advanced Carbon race fork',
-				brake: 'SHIMANO Hydraulic F+R disc brake',
-				display: 'RideControl GO, Frame Integrated LED Display',
-				battery: 'Sumsung 36V 10AH',
-				motor: 'Vinka Middle motor 36V250W',
-				gear: 'Shimano 22 speed',
-				tire: 'CST Continental gravel 700*40C',
-			},
-		},
 		{
 			name: 'Santorini',
 			code: 'C056',
@@ -584,31 +515,31 @@ const BikeScreen = () => {
 				tire: 'CST 20*4.0',
 			},
 		},
-		
 		{
-			name: 'Rigel',
-			code: 'F042',
+			name: 'Dellex',
+			code: 'F040',
 			category: 'folding',
-			model: './Japan/XPL.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f040/F040.gltf',
 			background: './images/bg-xplorer.png',
-			poster: './images/exp1.png',
+			poster: './posters/DELLEX F040.png',
 			specs: {
-				frame: 'Meganisium-alloy',
-				frontFork: 'Steel front fork',
-				brake: 'F+R mechanical disc brake   ',
+				frame: '6061 aluminium alloy',
+				frontFork: 'Aluminium alloy front fork',
+				brake: 'Tektro Mechanical F+R disc brake',
 				display: 'LCD display',
-				battery: '36V 7.5Ah',
-				motor: 'Rear motor 36V 250W ',
-				gear: 'Shimano 6 speed',
-				tire: 'CST 16*2.125',
+				battery: 'LG 36V 9.6Ah ',
+				motor: 'Rear motor  36V 250W',
+				gear: 'Shimano 7 speed',
+				tire: 'CST 20*1.95',
 			},
 		},
-	
+		
+		
 		{
 			name: 'Echo',
 			code: 'F043',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f043/F043.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F043/F043.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/ECHO F043.png',
 			specs: {
@@ -801,9 +732,6 @@ const BikeScreen = () => {
 							
 							
 							{/* <div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
-								
-								
-								
 									<div className=''>
 										<p className='mb-0'>Frame</p>
 										<h5>{allBikes[bike].specs.frame}</h5>
@@ -820,18 +748,9 @@ const BikeScreen = () => {
 										<p className='mb-0'>Gear</p>
 										<h5>{allBikes[bike].specs.gear}</h5>
 									</div>
-								
-								
-								
-								
-								
 							</div> */}
 
 
-							{/* aanotations */}
-							{/* <button class="Hotspot" slot="hotspot-3" data-position="0.2749437352872653m 1.201393338293662m -0.061638826362098165m" data-normal="0m -0.015809070898161134m 0.9998750288297718m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">bike</div>
-    </button> */}
 
 
 							{/* ........ */}
@@ -888,7 +807,7 @@ const BikeScreen = () => {
 					}`}>
 					<div className='main-list height-100 overflow-auto p-4 pt-0 '>
 						<div className='position-sticky bg-light  pt-4' style={{top:'0%'}}>
-							<div className='d-flex justify-content-between  align-items-center '>
+							<div className='d-flex justify-content-between pb-3 align-items-center '>
 								<h4 className='mb-2'>EM Bikes</h4>
 								<div className='form-floating' style={{ width: '45%' }}>
 									<select
