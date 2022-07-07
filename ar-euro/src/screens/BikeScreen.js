@@ -14,7 +14,7 @@ const BikeScreen = () => {
 			name: 'T-REX',
 			code: 'M006',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/trex%2Bbg/Trex+%2B+Black+And+Green.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/Trex/Trex+Black+And+Green.gltf',
 		
 			poster: './posters/trex M006.png',
 			specs: {
@@ -112,7 +112,7 @@ const BikeScreen = () => {
 			name: 'EMX',
 			code: 'M042',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/EMX/EMX.gltf',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/EMX/EMX+UP.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/EMX M042.png',
 			specs: {
@@ -268,7 +268,6 @@ const BikeScreen = () => {
 				tire: 'CST 700c x 38c',
 			},
 		},
-		
 
 		{
 			name: 'Viper',
@@ -288,6 +287,7 @@ const BikeScreen = () => {
 				tire: 'CST 700c x 38c',
 			},
 		},
+
 		{
 			name: 'Sydney',
 			code: 'C038',
@@ -345,13 +345,11 @@ const BikeScreen = () => {
 			},
 		},
 
-		
-
 		{
 			name: 'Vega',
 			code: 'C044',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltff',
+			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/VEGA C044.png',
 			specs: {
@@ -384,6 +382,7 @@ const BikeScreen = () => {
 				tire: 'Kenda 27.5*2.1',
 			},
 		},
+		
 		{
 			name: 'BRITA',
 			code: 'C047',
@@ -421,6 +420,7 @@ const BikeScreen = () => {
 				tire: 'CST 26*2.35',
 			},
 		},
+
 		{
 			name: 'Brooklyn',
 			code: 'C054',
@@ -458,6 +458,7 @@ const BikeScreen = () => {
 				tire: 'CST 700*38C',
 			},
 		},
+
 		// Folding Bikes
 
 		{
@@ -478,6 +479,7 @@ const BikeScreen = () => {
 				tire: 'CST 20*4.0',
 			},
 		},
+		
 		{
 			name: 'Hefei',
 			code: 'F031',

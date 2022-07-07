@@ -174,6 +174,7 @@ const FormScreen = () => {
 							class='form-control'
 							id='floatingInput'
 							value={name}
+							
 							onChange={(e) => setName(e.target.value)}
 							placeholder='name@example.com'
 						/>
