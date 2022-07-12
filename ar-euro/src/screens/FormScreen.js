@@ -59,7 +59,7 @@ const FormScreen = () => {
 					<div
 						className='row main'
 						style={{ height: '80vh', borderRadius: '10px' }}>
-						<div className='col-5 p-0 h-100 position-relative overflow-hidden'>
+						<div className='col-6 p-0 h-100 position-relative overflow-hidden'>
 							<img
 								src={image}
 								alt=''
@@ -85,9 +85,9 @@ const FormScreen = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-7 ps-4 pe-5 ' style={{paddingTop:'5em'}}>
+						<div className='col-6 ps-4 pe-5 ' style={{paddingTop:'5em'}}>
 							<form onSubmit={register}>
-								<h3 className='form-heading mb-4'>Registration Form</h3>
+								<h3 className='form-heading mb-4'>A New Era of E-Bikes</h3>
 
 								<div class="form-floating mb-3 mt-5">
  										 <input type="text" class="form-control" value={name}
@@ -156,7 +156,7 @@ const FormScreen = () => {
 					</div>
 				</div>
 			</div>
-			<div className=' mobile-form bg-light  d-lg-none' style={{height:'100vh',paddingTop:'20%'}}>
+			<div className=' mobile-form bg-form d-lg-none' style={{height:'100vh',paddingTop:'20%'}}>
 				<img
 					src={logo}
 					className='img-fluid d-block mx-auto pt-4'

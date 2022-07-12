@@ -14,8 +14,9 @@ const BikeScreen = () => {
 			name: 'T-REX',
 			code: 'M006',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/Trex/Trex+Black+And+Green.gltf',
-		
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/Trex/Trex+Black+And+Green.gltf',
+
 			poster: './posters/trex M006.png',
 			specs: {
 				frame: '6061 aluminium alloy',
@@ -29,12 +30,13 @@ const BikeScreen = () => {
 				tire: 'CST 26*4.0',
 			},
 		},
-		
+
 		{
 			name: 'Fireblade',
 			code: 'M011',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M011/M011.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M011/M011.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Fireblade M011.png',
 			specs: {
@@ -53,10 +55,12 @@ const BikeScreen = () => {
 			name: 'Crusader',
 			code: 'M030',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m030/M030.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m030/M030.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/CRUSADER M030.png',
-			bgColor:"background: rgb(124,173,231);background: linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);",
+			bgColor:
+				'background: rgb(124,173,231);background: linear-gradient(90deg, rgba(124,173,231,1) 0%, rgba(91,171,226,1) 39%, rgba(0,57,145,1) 87%);',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Hydraulic Oil Supension Front Fork with lock',
@@ -93,7 +97,8 @@ const BikeScreen = () => {
 			name: 'ROME',
 			code: 'M041',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m041/M041.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m041/M041.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/ROME M041.png',
 			specs: {
@@ -112,7 +117,8 @@ const BikeScreen = () => {
 			name: 'EMX',
 			code: 'M042',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/EMX/EMX+UP.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/EMX/EMX+UP.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/EMX M042.png',
 			specs: {
@@ -131,7 +137,8 @@ const BikeScreen = () => {
 			name: 'T-REX Pro',
 			code: 'M047',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m047/M047.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m047/M047.gltf',
 			background: '',
 			poster: './posters/T-REX PRO M047.png',
 			specs: {
@@ -150,7 +157,8 @@ const BikeScreen = () => {
 			name: 'Lucia',
 			code: 'M051',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M051/m051.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M051/m051.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Lucia-M051.png',
 			specs: {
@@ -169,7 +177,8 @@ const BikeScreen = () => {
 			name: 'Dune',
 			code: 'M052',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m052/M052.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/m052/M052.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DUNE M052.png',
 			specs: {
@@ -189,7 +198,8 @@ const BikeScreen = () => {
 			name: 'Spark',
 			code: 'M053',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M053/m053.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M053/m053.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SPARK M053.png',
 			specs: {
@@ -204,14 +214,13 @@ const BikeScreen = () => {
 				tire: '27.5*2.251 inches',
 			},
 		},
-		
-	
 
 		{
 			name: 'Athena',
 			code: 'M057',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M057/M057.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M057/M057.gltf',
 			background: '',
 			poster: './posters/ATHENA M057.png',
 			specs: {
@@ -231,7 +240,8 @@ const BikeScreen = () => {
 			name: 'Phoenix',
 			code: 'M058',
 			category: 'mtb',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M058/M058.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/M058/M058.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/PHEONIX M058.png',
 			specs: {
@@ -249,12 +259,12 @@ const BikeScreen = () => {
 
 		// CITY Bikes
 
-		
 		{
 			name: 'Schooner',
 			code: '3W001',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/3W001/3W001.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/3W001/3W001.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SCHOONER 3W01.png',
 			specs: {
@@ -273,7 +283,8 @@ const BikeScreen = () => {
 			name: 'Viper',
 			code: 'C037',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C037/c037.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C037/c037.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/VIPER C037.png',
 			specs: {
@@ -292,7 +303,8 @@ const BikeScreen = () => {
 			name: 'Sydney',
 			code: 'C038',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c038/C038.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c038/C038.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SYDNEY C038.png',
 			specs: {
@@ -311,7 +323,8 @@ const BikeScreen = () => {
 			name: 'Dove',
 			code: 'C041',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C041/C041.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C041/C041.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DOVE C041.png',
 			specs: {
@@ -330,7 +343,8 @@ const BikeScreen = () => {
 			name: 'Simba',
 			code: 'C042',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c042/C042.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c042/C042.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Simba C042.png',
 			specs: {
@@ -349,7 +363,8 @@ const BikeScreen = () => {
 			name: 'Vega',
 			code: 'C044',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/VEGA C044.png',
 			specs: {
@@ -368,7 +383,8 @@ const BikeScreen = () => {
 			name: 'Polaris',
 			code: 'C045',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C045/C045.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C045/C045.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Polaris C045.png',
 			specs: {
@@ -382,12 +398,13 @@ const BikeScreen = () => {
 				tire: 'Kenda 27.5*2.1',
 			},
 		},
-		
+
 		{
 			name: 'BRITA',
 			code: 'C047',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C044/c044.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/BRITA C047.png',
 			specs: {
@@ -406,7 +423,8 @@ const BikeScreen = () => {
 			name: 'Plymouth',
 			code: 'C053',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C053/C053.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C053/C053.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Plymouth C053.png',
 			specs: {
@@ -425,7 +443,8 @@ const BikeScreen = () => {
 			name: 'Brooklyn',
 			code: 'C054',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c054/C054.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c054/C054.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Brooklyn C054.png',
 			specs: {
@@ -444,7 +463,8 @@ const BikeScreen = () => {
 			name: 'Santorini',
 			code: 'C056',
 			category: 'city',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c056/C056.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c056/C056.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/SANTORINI C056.png',
 			specs: {
@@ -465,7 +485,8 @@ const BikeScreen = () => {
 			name: 'Touche',
 			code: 'F024',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F024/f024.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F024/f024.gltf',
 			background: './images/bg-xplorer.png',
 			poster: '../posters/TOUCHE F024.png',
 			specs: {
@@ -479,12 +500,13 @@ const BikeScreen = () => {
 				tire: 'CST 20*4.0',
 			},
 		},
-		
+
 		{
 			name: 'Hefei',
 			code: 'F031',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F031/F031.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F031/F031.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/hefie f031.png',
 			specs: {
@@ -521,7 +543,8 @@ const BikeScreen = () => {
 			name: 'Dellex',
 			code: 'F040',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f040/F040.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f040/F040.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/DELLEX F040.png',
 			specs: {
@@ -535,13 +558,13 @@ const BikeScreen = () => {
 				tire: 'CST 20*1.95',
 			},
 		},
-		
-		
+
 		{
 			name: 'Echo',
 			code: 'F043',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F043/F043.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F043/F043.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/ECHO F043.png',
 			specs: {
@@ -559,7 +582,8 @@ const BikeScreen = () => {
 			name: 'Strada',
 			code: 'F046',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f046/F046.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f046/F046.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/STRADA F046.png',
 			specs: {
@@ -577,7 +601,8 @@ const BikeScreen = () => {
 			name: 'Toledo',
 			code: 'F049',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F049/F049.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/F049/F049.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/TOLEDO F049.png',
 			specs: {
@@ -595,7 +620,8 @@ const BikeScreen = () => {
 			name: 'Windsor',
 			code: 'F050',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f050/F050.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/f050/F050.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/WINDSOR F050.png',
 			specs: {
@@ -616,7 +642,8 @@ const BikeScreen = () => {
 			name: 'Lil E',
 			code: 'SC-01',
 			category: 'folding',
-			model: 'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/lile/LILE_India.gltf',
+			model:
+				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/lile/LILE_India.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Lil e SC01.png',
 			specs: {
@@ -654,8 +681,7 @@ const BikeScreen = () => {
 			.addEventListener('progress', onProgress)
 	}, [bike])
 
-
-	const configBike = (i)=>{
+	const configBike = (i) => {
 		setBike(i)
 		setCollapseMobile(!collapseMobile)
 	}
@@ -679,18 +705,7 @@ const BikeScreen = () => {
 
 					{/* ..... */}
 
-					{/* <select
-						id='change-bike'
-						class='form-select d-lg-none'
-						onChange={changeBike}>
-						{allBikes.map((b, i) => (
-							<option key={i} value={`${i}`}>
-								{b.name}
-							</option>
-						))}
-					</select> */}
-
-					<div className={` h-100 main-div  ` } >
+					<div className={` h-100 main-div  `}>
 						<model-viewer
 							id='hotspot-camera-view-demo'
 							bounds='tight'
@@ -701,59 +716,29 @@ const BikeScreen = () => {
 							interaction-prompt='none'
 							ar-placement='floor'
 							render-scale='1'
-							ar-scale='fixed'
 							ar-modes='scene-viewer webxr quick-look'
 							camera-controls
-							camera-orbit='-90deg 80deg   '
+							min-camera-orbit='auto 0deg auto'
+							max-camera-orbit='auto 90deg auto'
 							environment-image='neutral'
 							shadow-intensity='3'>
 							<div className='load position-relative h-100 w-100 bg-em'>
 								<div className='h-100 w-100 bg-dark d-flex align-items-center justify-content-center'>
 									<div>
-									<div className='cube'>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
+										<div className='cube'>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+										<p className='text-center mt-3 percentage text-light text-bold'>
+											0%
+										</p>
 									</div>
-									<p className='text-center mt-3 percentage text-light text-bold'>
-										0%
-									</p>
-									</div>
-								
 								</div>
-								{/* <div className='main-load'>
-									<span class='loader'></span>
-									<p className='text-center percentage text-light text-bold'>
-										0%
-									</p>
-								</div> */}
 							</div>
-							
-							
-							{/* <div className='p-3 d-none  d-lg-flex w-100  align-items-center justify-content-around specs text-light'>
-									<div className=''>
-										<p className='mb-0'>Frame</p>
-										<h5>{allBikes[bike].specs.frame}</h5>
-									</div>
-									<div className=''>
-										<p className='mb-0'>Battery</p>
-										<h5>{allBikes[bike].specs.battery}</h5>
-									</div>
-									<div className=''>
-										<p className='mb-0'>Motor</p>
-										<h5>{allBikes[bike].specs.motor}</h5>
-									</div>
-									<div className=''>
-										<p className='mb-0'>Gear</p>
-										<h5>{allBikes[bike].specs.gear}</h5>
-									</div>
-							</div> */}
-
-
-
 
 							{/* ........ */}
 
@@ -764,29 +749,32 @@ const BikeScreen = () => {
 							<div id='ar-prompt'></div>
 						</model-viewer>
 
-
 						<button
 							className={`collapse-btn-mobile d-lg-none d-block  `}
 							onClick={() => setCollapseMobile(!collapseMobile)}>
 							<i className={`fa-solid fa-chevron-up  `}></i>
-							</button>
+						</button>
 						{/* .......... */}
-						<div className={` bg-light  ${collapseMobile && 'mobile-list animate__animated animate__fadeInUp'} `} >
-							
-							<div className='bg-light' style={{top:'0%'}}>
-
-							<div className='position-sticky bg-light  pt-4' style={{top:'0%'}}>
-								<div className='d-flex justify-content-between  align-items-center '>
-									<h4 className='mb-2'>EM Bikes</h4>
-									<button
-							className={` d-lg-none d-block  `}
-							onClick={() => setCollapseMobile(!collapseMobile)}>
-							<i className={`fa-solid fa-chevron-up  `}></i>
-							</button>
+						<div
+							className={` bg-light  ${
+								collapseMobile &&
+								'mobile-list animate__animated animate__fadeInUp'
+							} `}>
+							<div className='bg-light' style={{ top: '0%' }}>
+								<div
+									className='position-sticky bg-light  pt-4'
+									style={{ top: '0%' }}>
+									<div className='d-flex justify-content-between  align-items-center '>
+										<h4 className='mb-2'>EM Bikes</h4>
+										<button
+											className={` d-lg-none d-block  `}
+											onClick={() => setCollapseMobile(!collapseMobile)}>
+											<i className={`fa-solid fa-chevron-up  `}></i>
+										</button>
+									</div>
 								</div>
-							</div>	
 
-							{allBikes.map((b, i) => (
+								{allBikes.map((b, i) => (
 									<div
 										onClick={() => configBike(i)}
 										className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
@@ -794,12 +782,9 @@ const BikeScreen = () => {
 											<img src={b.poster} className='img-fluid' alt='' />
 										</div>
 									</div>
-							))}
-
+								))}
 							</div>
 						</div>
-
-
 					</div>
 				</div>
 				<div
@@ -808,52 +793,53 @@ const BikeScreen = () => {
 						collapse ? 'open-list' : 'close-list'
 					}`}>
 					<div className='main-list height-100 overflow-auto p-4 pt-0 '>
-						<div className='position-sticky bg-light  pt-4' style={{top:'0%'}}>
+						<div
+							className='position-sticky bg-light  pt-4'
+							style={{ top: '0%' }}>
 							<div className='d-flex justify-content-between pb-3 align-items-center '>
 								<h4 className='mb-2'>EM Bikes</h4>
 								<div className='form-floating' style={{ width: '45%' }}>
 									<select
 										class='form-select'
 										id='floatingSelect'
-										onChange={(e)=> setCategory(e.target.value)}
+										onChange={(e) => setCategory(e.target.value)}
 										aria-label='Floating label select example'>
-										<option value='all'   selected>
+										<option value='all' selected>
 											All
 										</option>
-										<option value='mtb' >Mountain</option>
-										<option value='city' >City</option>
+										<option value='mtb'>Mountain</option>
+										<option value='city'>City</option>
 										<option value='folding'>Foalding</option>
 									</select>
 									<label for='floatingSelect'>Category</label>
 								</div>
 							</div>
 						</div>
-						
-						<div className='d-flex d-lg-block'>
-						
 
-							{
-									category === 'all' &&  allBikes.map((b,i)=> <div
-									onClick={() => setBike(i)}
-									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
+						<div className='d-flex d-lg-block'>
+							{category === 'all' &&
+								allBikes.map((b, i) => (
+									<div
+										onClick={() => setBike(i)}
+										className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
 										<div className='pt-4 pb-4'>
 											<img src={b.poster} className='img-fluid' alt='' />
 										</div>
-									</div>)
-							}
-							
-						{allBikes.map((b, i) => (
-								
-								
-								b.category === category  && <div
-									onClick={() => setBike(i)}
-									className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
-									<div className='pt-4 pb-4'>
-										<img src={b.poster} className='img-fluid' alt='' />
 									</div>
-									</div>
-							
-							))} 
+								))}
+
+							{allBikes.map(
+								(b, i) =>
+									b.category === category && (
+										<div
+											onClick={() => setBike(i)}
+											className='bike-card p-2  mt-3 mb-3 d-flex justify-content-evenly  '>
+											<div className='pt-4 pb-4'>
+												<img src={b.poster} className='img-fluid' alt='' />
+											</div>
+										</div>
+									)
+							)}
 						</div>
 					</div>
 				</div>

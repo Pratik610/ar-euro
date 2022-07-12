@@ -11,8 +11,8 @@ const HomeScreen = () => {
 				loop
 				autoPlay
 				muted></video>
-			<div className='heading-box'>
-				
+			<div className='heading-box d-flex align-items-center justify-content-center h-100 '>
+				<div className=''>
 					<h3 className='text-center text-light'>
 						Lorem Ipsum is simply dummy text of the printing and typesetting
 						industry.
@@ -23,6 +23,8 @@ const HomeScreen = () => {
 						className='d-block w-25 mt-4 text-center  mx-auto get-started'>
 						Enter The World
 					</a>
+				</div>
+					
 				
 			</div>
 		</div>

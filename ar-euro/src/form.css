@@ -18,6 +18,12 @@
     box-shadow: 2px 2px 5px #5f5278;
            
 }
+
+.bg-form{
+    background-color: rgb(235, 228, 228);
+}
+
+
 .mobile-form label{
     color:rgb(189, 187, 183);
     font-weight: 500 !important;
