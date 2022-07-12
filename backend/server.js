@@ -49,11 +49,25 @@ const sendMail = (reciver,name) => {
 		from: 'tech@emotorad.com',
 		to: reciver,
 		subject: 'Thank you for visiting our booth',
-		html:`<b>Dear ${name}</b> <p>EMotorad extends a warm welcome to you. Thank you for visiting our booth and sharing interest in our vision. It would be great if we could connect and take this conversation further. </p> <p>EMotorad is an electric vehicle (EV) company that strives to help top brands from across the globe bring futuristic e-bikes to adventure seekers, daily commuters, or casual riders all over the world. We believe that ‘electric’ is the new future of mobility. We bring EV to consumers and deliver the product tailored to their requirements at a price they can afford; we like to call affordable luxury.
-		</p> <p>Let's keep taking strides for a more affordable and greener future.
-		</p> <p>Thank You, 
-		</p><p>Warm Regards,</p><p>EM Team 
-		</p>`,
+		html:`<b>Dear ${name}</b> <p>EMotorad extends a warm welcome to you. Thank you for visiting our booth (Hall 9, E18) and sharing your interest in our vision.</p>
+		<p>EMotorad is an e-bike manufacturer from India, an EV company that strives to help top brands from across the globe bring futuristic e-bikes to adventure seekers, daily commuters, or casual riders all over the world.</p>
+		<p>We believe in providing end-to-end solutions and hence provide complete assistance in terms of product support along with Shipping and supply chain solutions to legal antidumping solutions. We come with a professional experience of over a decade in Marketing, designing, branding, operations, and after-sales support.</p>
+		<p>It would be great if we could connect and take this conversation further.</p>
+		<p>Attached is our e-bike catalog for your reference</p>
+		<div>Warm Regards!</div>
+		<div>EM Team</div>
+		`,
+		attachments: [
+		{
+            filename:'EM_Highend_E-Bikes',
+            path: 'EM_Highend_E-Bikes(Digital).pdf'
+        },
+		{
+            filename:'EM_Midend_E-Bikes' ,
+            path: 'EM_Midend_E-Bikes(Digital).pdf'
+        }
+	]
+		
 	}
 
 	transporter.sendMail(mailOptions, function (error, info) {
