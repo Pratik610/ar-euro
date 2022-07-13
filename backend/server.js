@@ -50,7 +50,7 @@ const sendMail = (reciver,name) => {
 		to: reciver,
 		cc:['rajib@emotorad.com','kunal@emotorad.com','lily@gdsebike.com','karan@emotorad.com','aditya.sujan@emotorad.com','sunanki@emotorad.com'],
 
-		subject: 'Thank you for visiting our booth',
+		subject: 'EMotorad thanks you for visiting our booth at Eurobike',
 		html:`<b>Dear ${name}</b> <p>EMotorad extends a warm welcome to you. Thank you for visiting our booth (Hall 9, E18) and sharing your interest in our vision.</p>
 		<p>EMotorad is an e-bike manufacturer from India, an EV company that strives to help top brands from across the globe bring futuristic e-bikes to adventure seekers, daily commuters, or casual riders all over the world.</p>
 		<p>We believe in providing end-to-end solutions and hence provide complete assistance in terms of product support along with Shipping and supply chain solutions to legal antidumping solutions. We come with a professional experience of over a decade in Marketing, designing, branding, operations, and after-sales support.</p>
