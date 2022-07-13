@@ -1,6 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import video from '../videos/7.mp4'
+import { useNavigate, Link } from 'react-router-dom'
+
 const HomeScreen = () => {
+	const history = useNavigate()
+
+	
+
+	useEffect(() => {
+		history('/form')
+	}, [])
+	
+
 	return (
 		<div
 			className='p-0 main-home d-none d-lg-block position-relative'

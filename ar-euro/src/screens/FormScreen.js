@@ -4,7 +4,7 @@ import '../form.css'
 import image from '../images/6.jpg'
 import logo from '../images/GREEN PNG.png'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const FormScreen = () => {
 	const [name, setName] = useState('')
@@ -32,9 +32,7 @@ const FormScreen = () => {
 		}
 	}
 	return (
-		<div
-			className='height-100 ' style={{backgroundColor:'#10b068'}}
-		>
+		<div className='height-100 ' style={{ backgroundColor: '#10b068' }}>
 			{loading && (
 				<div
 					style={{ zIndex: '99' }}
@@ -55,17 +53,19 @@ const FormScreen = () => {
 				</div>
 			)}
 			<div className='d-lg-flex align-items-center d-none  h-100'>
-				<div className=' mx-auto' style={{width:'60%'}}>
+				<div className=' mx-auto' style={{ width: '60%' }}>
 					<div
 						className='row main'
 						style={{ height: '80vh', borderRadius: '10px' }}>
 						<div className='col-6 p-0 h-100 position-relative overflow-hidden'>
-							<img
-								src={image}
-								alt=''
-								className=' position-absolute w-100 h-100 '
-								style={{ zIndex: '' }}
-							/>
+							<Link to='/form'>
+								<img
+									src={image}
+									alt=''
+									className=' position-absolute w-100 h-100 '
+									style={{ zIndex: '' }}
+								/>
+							</Link>
 
 							<div
 								className='position-absolute w-100 '
@@ -85,29 +85,49 @@ const FormScreen = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-6 ps-4 pe-5 ' style={{paddingTop:'5em'}}>
+						<div className='col-6 ps-4 pe-5 ' style={{ paddingTop: '5em' }}>
 							<form onSubmit={register}>
 								<h3 className='form-heading mb-4'>A New Era of E-Bikes</h3>
-
-								<div class="form-floating mb-3 mt-5">
- 										 <input type="text" class="form-control" value={name}
-										onChange={(e) => setName(e.target.value)} id="floatingInput" placeholder="name@example.com"/>
- 										 <label for="floatingInput">Full Name</label>
+								<div class='form-floating mb-3 mt-5'>
+									<input
+										type='text'
+										class='form-control'
+										value={name}
+										onChange={(e) => setName(e.target.value)}
+										id='floatingInput'
+										placeholder='name@example.com'
+									/>
+									<label for='floatingInput'>Full Name</label>
 								</div>
-								<div class="form-floating mb-3">
- 										 <input type="email"
-										 value={email}
-										 onChange={(e) => setEmail(e.target.value)}
-										 class="form-control" id="floatingInput" placeholder="name@example.com"/>
- 										 <label for="floatingInput">Email address</label>
-								</div>	<div class="form-floating mb-3">
- 										 <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com"/>
- 										 <label for="floatingInput">Phone Number</label>
-								</div>	<div class="form-floating mb-3">
- 										 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com"/>
- 										 <label for="floatingInput">Company Name</label>
+								<div class='form-floating mb-3'>
+									<input
+										type='email'
+										value={email}
+										onChange={(e) => setEmail(e.target.value)}
+										class='form-control'
+										id='floatingInput'
+										placeholder='name@example.com'
+									/>
+									<label for='floatingInput'>Email address</label>
+								</div>{' '}
+								<div class='form-floating mb-3'>
+									<input
+										type='number'
+										class='form-control'
+										id='floatingInput'
+										placeholder='name@example.com'
+									/>
+									<label for='floatingInput'>Phone Number</label>
+								</div>{' '}
+								<div class='form-floating mb-3'>
+									<input
+										type='text'
+										class='form-control'
+										id='floatingInput'
+										placeholder='name@example.com'
+									/>
+									<label for='floatingInput'>Company Name</label>
 								</div>
-
 								{/* <div className='mb-4'>
 									<label>Full Name:</label>
 									<input
@@ -144,8 +164,6 @@ const FormScreen = () => {
 										className='d-block inp-form'
 									/>
 								</div> */}
-								
-
 								<div className='mt-5'>
 									<button type='submit' className='submit-btn'>
 										Submit
@@ -156,14 +174,18 @@ const FormScreen = () => {
 					</div>
 				</div>
 			</div>
-			<div className=' mobile-form bg-form d-lg-none' style={{height:'100vh',paddingTop:'20%'}}>
+			<div
+				className=' mobile-form bg-form d-lg-none'
+				style={{ height: '100vh', paddingTop: '20%' }}>
 				<img
 					src={logo}
 					className='img-fluid d-block mx-auto pt-4'
 					width={180}
 					alt=''
 				/>
-				<p className='text-center text-light text-dark ' style={{ fontSize: '0.8em' }}>
+				<p
+					className='text-center text-light text-dark '
+					style={{ fontSize: '0.8em' }}>
 					Blending the future of EV with Augmented Reality
 				</p>
 				<form onSubmit={register} className='p-3'>
@@ -174,7 +196,6 @@ const FormScreen = () => {
 							class='form-control'
 							id='floatingInput'
 							value={name}
-							
 							onChange={(e) => setName(e.target.value)}
 							placeholder='name@example.com'
 						/>
