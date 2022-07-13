@@ -280,26 +280,6 @@ const BikeScreen = () => {
 		},
 
 		{
-			name: 'Viper',
-			code: 'C037',
-			category: 'city',
-			model:
-				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C037/c037.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './posters/VIPER C037.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Suspension front fork',
-				brake: 'F+R mechanical disc brake',
-				display: 'LCD  display',
-				battery: '36V 10.4Ah',
-				motor: 'Rear motor  36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 700c x 38c',
-			},
-		},
-
-		{
 			name: 'Sydney',
 			code: 'C038',
 			category: 'city',
@@ -427,26 +407,6 @@ const BikeScreen = () => {
 				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/C053/C053.gltf',
 			background: './images/bg-xplorer.png',
 			poster: './posters/Plymouth C053.png',
-			specs: {
-				frame: '6061 aluminium alloy',
-				frontFork: 'Alloy Suspension front fork',
-				brake: 'Tektro mechanical F+R disc brake',
-				display: 'LCD display',
-				battery: '36V 10.4Ah ，quick release',
-				motor: 'Rear motor 36V 250W',
-				gear: 'Shimano 7 speed',
-				tire: 'CST 26*2.35',
-			},
-		},
-
-		{
-			name: 'Brooklyn',
-			code: 'C054',
-			category: 'city',
-			model:
-				'https://ar-euro.s3.ap-south-1.amazonaws.com/spain-models/c054/C054.gltf',
-			background: './images/bg-xplorer.png',
-			poster: './posters/Brooklyn C054.png',
 			specs: {
 				frame: '6061 aluminium alloy',
 				frontFork: 'Alloy Suspension front fork',
@@ -809,7 +769,7 @@ const BikeScreen = () => {
 										</option>
 										<option value='mtb'>Mountain</option>
 										<option value='city'>City</option>
-										<option value='folding'>Foalding</option>
+										<option value='folding'>Folding</option>
 									</select>
 									<label for='floatingSelect'>Category</label>
 								</div>

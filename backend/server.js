@@ -48,7 +48,7 @@ const sendMail = (reciver,name) => {
 	var mailOptions = {
 		from: 'contactus@emotorad.com',
 		to: reciver,
-		cc:['rajib@emotorad.com','kunal@emotorad.com','lily@gdsebike.com','karan@emotorad.com','aditya.sujan@emotorad.com'],
+		cc:['rajib@emotorad.com','kunal@emotorad.com','lily@gdsebike.com','karan@emotorad.com','aditya.sujan@emotorad.com','sunanki@emotorad.com'],
 
 		subject: 'Thank you for visiting our booth',
 		html:`<b>Dear ${name}</b> <p>EMotorad extends a warm welcome to you. Thank you for visiting our booth (Hall 9, E18) and sharing your interest in our vision.</p>
@@ -61,11 +61,11 @@ const sendMail = (reciver,name) => {
 		`,
 		attachments: [
 		{
-            filename:'EM_Highend_E-Bikes',
+            filename:'EM_Highend_E-Bikes.pdf',
             path: 'EM_Highend_E-Bikes(Digital).pdf'
         },
 		{
-            filename:'EM_Midend_E-Bikes' ,
+            filename:'EM_Midend_E-Bikes.pdf' ,
             path: 'EM_Midend_E-Bikes(Digital).pdf'
         }
 	]
