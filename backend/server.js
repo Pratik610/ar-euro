@@ -56,6 +56,15 @@ const sendMail = (reciver,name) => {
 		<p>We believe in providing end-to-end solutions and hence provide complete assistance in terms of product support along with Shipping and supply chain solutions to legal antidumping solutions. We come with a professional experience of over a decade in Marketing, designing, branding, operations, and after-sales support.</p>
 		<p>It would be great if we could connect and take this conversation further.</p>
 		<p>Attached is our e-bike catalog for your reference</p>
+		<p>Feel free to say hi at :<p>
+		<span>Karan Sujan</span>
+		<span>+34 605 28 54 72</span>
+		<span>karan@emotorad.com</span>
+		</br>
+		<span>Rajib Gangopadhyay</span>
+		<span>+91 70015 26270</span>
+		<span>rajib@emotorad.com</span>
+		</br>
 		<div>Warm Regards!</div>
 		<div>EM Team</div>
 		`,
